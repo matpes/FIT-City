@@ -64,3 +64,18 @@ footer{
 .noMargin{
     margin: 0;
 }
+body{
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.padding{
+    padding: 15px;
+}
+
+.margin{
+    margin-top: 15px;
+}
+
+.tile{
+    background-color: lightgrey;
+}
