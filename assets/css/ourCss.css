@@ -1,0 +1,32 @@
+
+ul li a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+ul li {
+    float: left;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+
+    
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: black;
+}
+
+ul li ul li {
+    display: none;
+}
+ul li:hover ul li {
+    display: block;
+}
