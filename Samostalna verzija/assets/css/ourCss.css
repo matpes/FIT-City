@@ -29,8 +29,8 @@ ul li:hover ul li {
 }
 
 nav div ul li {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .white{
@@ -52,7 +52,6 @@ footer{
     background-color: #000;
     text-align: center;
     margin: 0;
-    width: 100%;
 }
 
 .naslov{
@@ -64,18 +63,78 @@ footer{
 .noMargin{
     margin: 0;
 }
-body{
+
+#pozadina{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+    background: url('../../images/bg.jpg') no-repeat;
+    background-blend-mode: lighten;
+    background-size: cover;
 }
 
 .padding{
-    padding: 15px;
+    padding: 25px;
 }
 
-.margin{
+.marginTop{
     margin-top: 15px;
 }
 
+.marginLeft{
+    margin-left: 15px;
+}
+
+.marginRight{
+    margin-right: 15px;
+}
+
+.marginBot{
+    margin-bottom: 15px;
+}
+
+
 .tile{
-    background-color: lightgrey;
+    background-color: darkgrey;
+    
+    border: lightgray solid 25px;
+}
+
+.description{
+    font-size: larger;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.noPadding{
+    padding-right: 0px !important;
+}
+
+
+.title{
+    font-weight: normal;
+    font-size:20px;
+    color: white;
+}
+
+#title{
+    font-weight: 900;
+    font-size:50px !important;
+    color: white;
+    text-align: center;
+}
+
+
+.nothing{
+    text-decoration: none;
+    color: black;
+}
+
+:hover .nothing{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.circle{
+    border-radius: .5rem;
 }
