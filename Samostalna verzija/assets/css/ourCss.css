@@ -3,6 +3,14 @@ ul li a{
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
 }
+nav ol li a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+nav ol li a:hover{
+    color: white;
+    text-decoration: none;
+}
 ul li a:hover{
     color: white;
     text-decoration: none;
@@ -137,4 +145,11 @@ footer{
 
 .circle{
     border-radius: .5rem;
+}
+
+.current{
+    color: white !important;
+}
+.previous{
+    color: rgba(255, 255, 255, 0.5) !important;
 }
