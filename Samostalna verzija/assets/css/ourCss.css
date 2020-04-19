@@ -19,9 +19,13 @@ ul li a:hover{
 ul li {
     float: left;
     text-align: center;
-    
-    
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 
 ul {
     margin: 0px;
@@ -152,4 +156,40 @@ footer{
 }
 .previous{
     color: rgba(255, 255, 255, 0.5) !important;
+}
+
+
+.btn-pos{
+    width: 45%;
+    text-align: center;
+    color: lightgray;
+}
+.btn-pos:hover{
+    left: calc(33%+15);
+    color: blanchedalmond;
+}
+
+.sakriveno{
+    visibility: hidden;
+}
+
+.vidljivo{
+    visibility: visible;
+}
+
+.komentar{
+    color: white !important;
+}
+
+.btn-middle{
+    width: 30%;
+}
+
+
+.ocena{
+    border-radius: .5rem;
+    background-color: #343a40;
+    color: white;
+    width: 30%;
+    height: 38px;
 }
