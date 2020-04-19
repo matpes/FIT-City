@@ -24,9 +24,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="assets/js/ourJs.js"></script>
 </head>
 
-<body class="is-preload" id="pozadina">
+<body class="is-preload" id="pozadina" onload="init()">
 
 
 
@@ -36,60 +37,64 @@
 
     <div class="containter-fluid">
 
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: black !important;">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt=""
-                            class="img-fluid float-left" width="30px" height="30px"> FIT CITY</a>
+        <div class="myHeader">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-dark bg-dark"
+                        style="background-color: black !important;">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt=""
+                                class="img-fluid float-left" width="30px" height="30px"> FIT CITY</a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item ">
-                                <a href="index.html" class="nav-link"> POČETNA
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown active">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item ">
+                                    <a href="index.html" class="nav-link"> POČETNA
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown active">
 
-                                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    USLUGE
-                                </a>
-                                <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
-                                    <a class="dropdown-item white bg-dark" href="#"> NUTRICIONISTA</a>
-                                    <a class="dropdown-item white bg-dark" href="#">MASAŽE</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link"> ZAKAZIVANJE TRENINGA </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link"> MOJ NALOG </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link"> O NAMA </a>
-                            </li>
+                                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        USLUGE
+                                    </a>
+                                    <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
+                                        <a class="dropdown-item white bg-dark" href="#"> NUTRICIONISTA</a>
+                                        <a class="dropdown-item white bg-dark" href="#">MASAŽE</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link"> ZAKAZIVANJE TRENINGA </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link"> MOJ NALOG </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link"> O NAMA </a>
+                                </li>
 
-                        </ul>
-                    </div>
-                </nav>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-
+        <br>
+        <br>
         <div class="row">
-            <div class="col-12" >
+            <div class="col-12">
                 <nav aria-label="breadcrumb" style="background-color: black !important;">
                     <ol class="breadcrumb" style="background-color: black !important;">
-                      <li class="breadcrumb-item"><a href="index.html" class="Previous">Početna</a></li>
-                      <li class="breadcrumb-item"><a href="Treninzi.html">Usluge</a></li>
-                      <li class="breadcrumb-item"><a href="Treninzi.html">Treninzi</a></li>
-                      <li class="breadcrumb-item active current" aria-current="page">Core</li>
+                        <li class="breadcrumb-item"><a href="index.html" class="Previous">Početna</a></li>
+                        <li class="breadcrumb-item"><a href="Treninzi.html">Usluge</a></li>
+                        <li class="breadcrumb-item"><a href="Treninzi.html">Treninzi</a></li>
+                        <li class="breadcrumb-item active current" aria-current="page">Core</li>
                     </ol>
                 </nav>
             </div>
@@ -116,7 +121,8 @@
                     <div class="tile col-12">
                         <div class="row">
                             <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
+                                    data-ride="carousel">
                                     <div class="carousel-inner padding">
                                         <div class="carousel-item ">
                                             <img src="images/Core/cxworx1.jpg" class="d-block w-100 img-fluid circle"
@@ -130,34 +136,62 @@
                                             <img src="images/Core/cxworx3.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-7 col-sm-12">
                                 <br>
-                                <br>
 
                                 <h2>
                                     CXWORX
                                 </h2>
-                            
-                            <p class="description">
-                                <b>Bikram yoga</b> je dobila ime po Bikram Čouduriju i sadrži niz postavljenih poza u sobi kao što 
-                                je sauna - obično podešena na 105 stepeni i 40% vlažnossti.
-                                Choudhuri se suočio sa tužbama za seksualno zlostavljanje i uznemiravanje u SAD-u i pobjegao u Meksiko 2017. godine.
-                                Mnogi studiji koji su nekada bili Bikram studiji, sada praktikuju vruću jogu, u nastojanju da se razdvoje od osnivača.
-                            </p>
-                            <div class="description" >
-                                
-                                <span class="float-left" style="margin-top: 13px;">Težina: &nbsp;&nbsp;</span>
-                                <img src="images/Stars/4.5.png" alt="5" class="float-left img-fluid" width="20%">
-                            </div>
 
-                            <div class="description" >
-                                <img src="images/Stars/3.png" alt="5" class="float-right img-fluid" width="20%">
-                                <span class="float-right" style="margin-top: 13px;">Ocena: &nbsp;&nbsp;</span>
-                            </div>
+                                <p class="description">
+                                    <b>Bikram yoga</b> je dobila ime po Bikram Čouduriju i sadrži niz postavljenih poza
+                                    u sobi kao što
+                                    je sauna - obično podešena na 105 stepeni i 40% vlažnossti.
+                                    Choudhuri se suočio sa tužbama za seksualno zlostavljanje i uznemiravanje u SAD-u i
+                                    pobjegao u Meksiko 2017. godine.
+                                    Mnogi studiji koji su nekada bili Bikram studiji, sada praktikuju vruću jogu, u
+                                    nastojanju da se razdvoje od osnivača.
+                                </p>
+                                <div class="row">
+
+                                    <div class="description col-sm-12 col-md-3 text-center">
+                                        <p class="description text-center">
+                                            Težina: &nbsp;&nbsp; 5
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 text-center">
+                                        <button type="button" class="btn bg-dark btn-pos"
+                                            onclick=" displayComents('coreCom1')">
+                                            Komentari
+                                        </button>
+                                        &nbsp;
+                                        &nbsp;
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom1')">
+                                            Oceni
+                                        </button>
+                                    </div>
+                                    <div class="description col-sm-12 col-md-3 text-center">
+                                        <p class="description text-center">
+                                            Ocena: &nbsp;&nbsp;
+                                            <span id=coreCom1Mark> 3</span>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <form action="" name="cardioKom2">
+                                    <div class="row">
+                                        <div class="col-12 form-group" id="coreCom1">
+
+
+
+                                        </div>
+                                    </div>
+                                </form>
 
                             </div>
                         </div>
@@ -174,33 +208,57 @@
                         <div class="row">
                             <div class="col-lg-8 col-md-7 col-sm-12">
                                 <br>
-                                <br>
 
                                 <h2>
                                     BODYWEIGHT
                                 </h2>
-                            
-                            <p class="description">
-                                <b>Yin yoga</b> se fokusira na vaša duboka vezna tkiva, poput fascija, ligamenata, zglobova i kostiju. 
-                                Ona je sporija i meditativnija što vam daje prostor da se okrenete prema unutra i regulišete kako vaš um, tako i fizičke senzacije vašeg tela. 
-                                Budući da držite poza duže vreme nego što je to slučaj sa drugim tradicionalnim vrstama joge, 
-                                yin ioga vam pomaže da se istegnete i produžite ona retko korišćena tkiva, 
-                                a istovremeno vas uči kako disati kroz nelagodu i sedeti sa svojim mislima.
-                            
-                            </p>
-                            <div class="description" >
-                                
-                                <span class="float-left" style="margin-top: 13px;">Težina: &nbsp;&nbsp;</span>
-                                <img src="images/Stars/4.png" alt="5" class="float-left img-fluid" width="20%">
-                            </div>
 
-                            <div class="description" >
-                                <img src="images/Stars/5.png" alt="5" class="float-right img-fluid" width="20%">
-                                <span class="float-right" style="margin-top: 13px;">Ocena: &nbsp;&nbsp;</span>
-                            </div>
+                                <p class="description">
+                                    <b>Yin yoga</b> se fokusira na vaša duboka vezna tkiva, poput fascija, ligamenata,
+                                    zglobova i kostiju.
+                                    Ona je sporija i meditativnija što vam daje prostor da se okrenete prema unutra i
+                                    regulišete kako vaš um, tako i fizičke senzacije vašeg tela.
+                                    Budući da držite poza duže vreme nego što je to slučaj sa drugim tradicionalnim
+                                    vrstama joge,
+                                    yin ioga vam pomaže da se istegnete i produžite ona retko korišćena tkiva,
+                                    a istovremeno vas uči kako disati kroz nelagodu i sedeti sa svojim mislima.
+
+                                </p>
+                                <div class="row">
+                                    <div class="description col-sm-12 col-md-3 text-center">
+                                        <p class="description text-center">
+                                            Težina: &nbsp;&nbsp; 5
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 text-center">
+                                        <button type="button" class="btn bg-dark float-left btn-pos"
+                                            onclick=" displayComents('coreCom2')">
+                                            Komentari
+                                        </button>
+                                        &nbsp;
+                                        &nbsp;
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom2')">
+                                            Oceni
+                                        </button>
+                                    </div>
+                                    <div class="description col-sm-12 col-md-3 text-center">
+                                        <p class="description text-center">
+                                            Ocena: &nbsp;&nbsp;
+                                            <span id=coreCom2Mark> 5</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <form action="" name="coreKom2">
+                                    <div class="row">
+                                        <div class="col-12 form-group" id="coreCom2">
+
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                             <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
+                                    data-ride="carousel">
                                     <div class="carousel-inner padding">
                                         <div class="carousel-item active">
                                             <img src="images/Core/body.jpg" class="d-block w-100 img-fluid circle"
@@ -214,12 +272,12 @@
                                             <img src="images/Core/body3.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
-                            
-                        </div>                            
+
+                        </div>
                     </div>
                 </div>
                 <br>
@@ -230,7 +288,8 @@
                     <div class="tile col-12">
                         <div class="row">
                             <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
+                                    data-ride="carousel">
                                     <div class="carousel-inner padding">
                                         <div class="carousel-item active">
                                             <img src="images/Core/core4.jpg" class="d-block w-100 img-fluid circle"
@@ -244,43 +303,68 @@
                                             <img src="images/core/core2.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-7 col-sm-12">
                                 <br>
-                                <br>
 
                                 <h2>
                                     PLANK
                                 </h2>
-                            
-                            <p class="description">
-                                <b>Prenatalna yoga</b> je savršena aktivnost za trudnice jer pruža psihofizičku pripremu za porođaj, 
-                                opušta i smiruje telo, uči pravilnom držanju i ono što je možda i najlepše upoznaćete gomilu mama 
-                                koje dele iste brige kao i vi!
-                               Program Prenatal yoge je takav da se prilagođava trimestru u kome se trenutno nalazite, 
-                               tako da ćete uvek vežbati bezbedno i u granicama svog trenutnog stanja i mogućnosti. 
-                            </p>
-                            
-                            <div class="description" >
-                                
-                                <span class="float-left" style="margin-top: 13px;">Težina: &nbsp;&nbsp;</span>
-                                <img src="images/Stars/3.5.png" alt="5" class="float-left img-fluid" width="20%">
-                            </div>
 
-                            <div class="description" >
-                                <img src="images/Stars/5.png" alt="5" class="float-right img-fluid" width="20%">
-                                <span class="float-right" style="margin-top: 13px;">Ocena: &nbsp;&nbsp;</span>
-                            </div>
+                                <p class="description">
+                                    <b>Prenatalna yoga</b> je savršena aktivnost za trudnice jer pruža psihofizičku
+                                    pripremu za porođaj,
+                                    opušta i smiruje telo, uči pravilnom držanju i ono što je možda i najlepše
+                                    upoznaćete gomilu mama
+                                    koje dele iste brige kao i vi!
+                                    Program Prenatal yoge je takav da se prilagođava trimestru u kome se trenutno
+                                    nalazite,
+                                    tako da ćete uvek vežbati bezbedno i u granicama svog trenutnog stanja i mogućnosti.
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 description">
+                                        <p class="description text-center">
+                                            Težina: &nbsp;3.5
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 text-center">
+                                        <button type="button" class="btn bg-dark float-left btn-pos"
+                                            onclick="displayComents('coreCom3')">
+                                            Komentari
+                                        </button>
+                                        &nbsp;
+                                        &nbsp;
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom3')">
+                                            Oceni
+                                        </button>
+                                    </div>
+
+                                    <div class="description col-sm-12 col-md-3 text-center">
+                                        <p class="description text-center">
+                                            Ocena: &nbsp;&nbsp;
+                                            <span id=coreCom3Mark> 5</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <form action="" name="cardioKom3">
+                                    <div class="row">
+                                        <div class="col-12 form-group" id="coreCom3">
+
+                                        </div>
+                                    </div>
+                                </form>
 
                             </div>
                         </div>
 
-                            
 
-                            
+
+
                     </div>
                 </div>
                 <br>

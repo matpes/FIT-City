@@ -1,14 +1,16 @@
-
-
-
-
 var comments = {
     cardioCom1: ["Jako naporan, ali zanimljiv trening", "HELLO"],
     cardioCom2: [],
     cardioCom3: [],
     coreCom1: [],
     coreCom2: [],
-    coreCom3: []
+    coreCom3: [],
+    pilatesCom1: [],
+    pilatesCom2: [],
+    pilatesCom3: [],
+    yogaCom1: [],
+    yogaCom2: [],
+    yogaCom3: []
 }
 
 
@@ -84,12 +86,13 @@ var mark = id => {
 }
 
 var storeMark = id => {
-    let currMark = parseInt(document.getElementById(`${id}Mark`).innerText);
-    let newMark = parseInt(document.getElementById(`${id}NewMark`).value);
+    let currMark = parseFloat(document.getElementById(`${id}Mark`).innerText);
+    let newMark = parseFloat(document.getElementById(`${id}NewMark`).value);
     console.log(currMark);
     console.log(newMark);
     currMark = (currMark+newMark)/2;
     console.log(currMark);
     document.getElementById(`${id}Mark`).innerText = currMark;
+    localStorage[`${id}`] = false;
     hide(id);
 }
