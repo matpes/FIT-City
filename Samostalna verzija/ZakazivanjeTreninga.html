@@ -24,11 +24,67 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#FilterTr").click(function () {
+                $("#hiddenCount").val("0");
+                $("#yoga1").hide();
+                $("#yoga2").hide();
+                $("#yoga3").hide();
+                $("#cardio1").hide();
+                $("#cardio2").hide();
+                $("#cardio3").hide();
+                $("#core1").hide();
+                $("#core2").hide();
+                $("#core3").hide();
+                $("#pilates1").hide();
+                $("#pilates2").hide();
+                $("#pilates3").hide();
+
+                if ($("#checkYoga").is(":checked")) {
+                    $("#yoga1").show();
+                    $("#yoga2").show();
+                    $("#yoga3").show();
+                    $("#hiddenCount").val(parseInt($("#hiddenCount").val())+1);
+                }
+                if ($("#checkPilates").is(":checked")) {
+
+                    $("#pilates1").show();
+                    $("#pilates2").show();
+                    $("#pilates3").show();
+                    $("#hiddenCount").val(parseInt($("#hiddenCount").val())+1);
+                }
+                if ($("#checkCore").is(":checked")) {
+                    $("#core1").show();
+                    $("#core2").show();
+                    $("#core3").show();
+                    $("#hiddenCount").val(parseInt($("#hiddenCount").val())+1);
+                }
+                if ($("#checkCardio").is(":checked")) {
+
+                    $("#cardio1").show();
+                    $("#cardio2").show();
+                    $("#cardio3").show();
+                    $("#hiddenCount").val(parseInt($("#hiddenCount").val())+1);
+                }
+                console.log(parseInt($("#hiddenCount").val()));
+                if(parseInt($("#hiddenCount").val())<=0){
+                    $("#brovi").html("<br><br><br><br><br><br><br><br><br><br>")
+                }
+                if(parseInt($("#hiddenCount").val())==1){
+                    $("#brovi").html("<br><br><br><br><br><br><br>")
+                }
+                if(parseInt($("#hiddenCount").val())>1){
+                    $("#brovi").html("")
+                }
+            });
+        });
+    </script>
 </head>
 
 <body class="is-preload" id="pozadina">
 
-
+    
 
 
 
@@ -119,31 +175,41 @@
                         <div class="col-md-12 col-lg-2 tile2 noPadding">
                             <form action="">
                                 <div class="form-group form-check noPadding" style="padding-right: 20px;">
-                                    <input type="checkbox" name="checkYoga" id="checkYoga" class="marginLeft marginTop marginBot">
-                                    <label class="form-check-label marginRight marginTop marginBot checkText" for="checkYoga">Yoga</label>
+                                    <input type="checkbox" name="checkYoga" id="checkYoga"
+                                        class="marginLeft marginTop marginBot">
+                                    <label class="form-check-label marginRight marginTop marginBot checkText"
+                                        for="checkYoga">Yoga</label>
                                     <br>
-                                    <input type="checkbox" name="checkPilates" id="checkPilates" class="marginLeft marginTop marginBot"> 
-                                    <label class="form-check-label marginRight marginTop marginBot checkText" for="checkPilates">Pilates</label>
+                                    <input type="checkbox" name="checkPilates" id="checkPilates"
+                                        class="marginLeft marginTop marginBot">
+                                    <label class="form-check-label marginRight marginTop marginBot checkText"
+                                        for="checkPilates">Pilates</label>
                                     <br>
-                                    <input type="checkbox" name="checkCore" id="checkCore" class="marginLeft marginTop marginBot"> 
-                                    <label class="form-check-label marginRight marginTop marginBot checkText" for="checkCore">Core</label>
-                                    
+                                    <input type="checkbox" name="checkCore" id="checkCore"
+                                        class="marginLeft marginTop marginBot">
+                                    <label class="form-check-label marginRight marginTop marginBot checkText"
+                                        for="checkCore">Core</label>
+
                                     <br>
-                                    <input type="checkbox" name="checkCardio" id="checkCardio" class="marginLeft marginTop marginBot">
-                                    <label class="form-check-label marginRight marginTop marginBot checkText" for="checkCardio">Cardi O</label>
+                                    <input type="checkbox" name="checkCardio" id="checkCardio"
+                                        class="marginLeft marginTop marginBot">
+                                    <label class="form-check-label marginRight marginTop marginBot checkText"
+                                        for="checkCardio">Cardi O</label>
                                     <br>
-                                    <button type="button" class="btn bg-dark filter text-center" class="margin"> Filter </button>
+                                    <button type="button" class="btn bg-dark filter text-center" class="margin"
+                                        id="FilterTr"> Filter </button>
+                                    <input type="hidden" name="" id="hiddenCount">
                                 </div>
                             </form>
-                            
+
                         </div>
                         <div class="col-md-12 col-lg-10">
 
                             <div class="row tile3">
 
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding" id="yoga1">
                                     <img src="images/yoga/bikram2.jpg" alt="" class="img-fluid circle">
-                                    
+
                                     <p class="description text-center">
                                         <h4 class="text-center">
                                             Bikram Yoga
@@ -151,9 +217,9 @@
                                         <button class="btn bg-dark filter">Detalji</button>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding" id="yoga2">
                                     <img src="images/yoga/yin3.jpg=w768" alt="" class="img-fluid circle">
-                                    
+
                                     <p class="description text-center">
                                         <h4 class="text-center">
                                             Yin Yoga
@@ -161,9 +227,9 @@
                                         <button class="btn bg-dark filter">Detalji</button>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding" id="yoga3">
                                     <img src="images/yoga/prenatal4.jpg" alt="" class="img-fluid circle">
-                                    
+
                                     <p class="description text-center">
                                         <h4 class="text-center">
                                             Prenatal Yoga
@@ -171,9 +237,80 @@
                                         <button class="btn bg-dark filter">Detalji</button>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding">
+
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding"
+                                    id="pilates1">
+                                    <img src="images/Pilates/klasicni2.jpg" alt="" class="img-fluid circle">
+
+                                    <p class="description text-center">
+                                        <h4 class="text-center">
+                                            Pilates
+                                        </h4>
+                                        <button class="btn bg-dark filter">Detalji</button>
+                                    </p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding"
+                                    id="pilates2">
+                                    <img src="images/Pilates/stott1.jpg" alt="" class="img-fluid circle">
+
+                                    <p class="description text-center">
+                                        <h4 class="text-center">
+                                            Stott
+                                        </h4>
+                                        <button class="btn bg-dark filter">Detalji</button>
+                                    </p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding"
+                                    id="pilates3">
+                                    <img src="images/Pilates/reformer3.jpg" alt="" class="img-fluid circle">
+
+                                    <p class="description text-center">
+                                        <h4 class="text-center">
+                                            Reformer
+                                        </h4>
+                                        <button class="btn bg-dark filter">Detalji</button>
+                                    </p>
+                                </div>
+
+
+
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding" id="core1">
+                                    <img src="images/Core/cxworx3.jpg" alt="" class="img-fluid circle">
+
+                                    <p class="description text-center">
+                                        <h4 class="text-center">
+                                            Cxworx
+                                        </h4>
+                                        <button class="btn bg-dark filter">Detalji</button>
+                                    </p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding" id="core2">
+                                    <img src="images/Core/body.jpg" alt="" class="img-fluid circle">
+
+                                    <p class="description text-center">
+                                        <h4 class="text-center">
+                                            Bodyweight
+                                        </h4>
+                                        <button class="btn bg-dark filter">Detalji</button>
+                                    </p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding" id="core3">
+                                    <img src="images/Core/core2.jpg" alt="" class="img-fluid circle">
+
+                                    <p class="description text-center">
+                                        <h4 class="text-center">
+                                            Plank
+                                        </h4>
+                                        <button class="btn bg-dark filter">Detalji</button>
+                                    </p>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding"
+                                    id="cardio1">
                                     <img src="images/Cardio/combat.png" alt="" class="img-fluid circle">
-                                    
+
                                     <p class="description text-center">
                                         <h4 class="text-center">
                                             Body Combat
@@ -181,9 +318,10 @@
                                         <button class="btn bg-dark filter">Detalji</button>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding"
+                                    id="cardio2">
                                     <img src="images/Cardio/rpm1.png" alt="" class="img-fluid circle">
-                                    
+
                                     <p class="description text-center">
                                         <h4 class="text-center">
                                             RPM
@@ -191,9 +329,10 @@
                                         <button class="btn bg-dark filter">Detalji</button>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 tile4 maliPadding"
+                                    id="cardio3">
                                     <img src="images/Cardio/step4.png" alt="" class="img-fluid circle">
-                                    
+
                                     <p class="description text-center">
                                         <h4 class="text-center">
                                             Body Step
@@ -201,7 +340,6 @@
                                         <button class="btn bg-dark filter">Detalji</button>
                                     </p>
                                 </div>
-
 
 
                             </div>
@@ -216,10 +354,13 @@
 
                 </div>
             </div>
+            <span id="brovi">
+
+            </span>
             <br>
             <br>
             <br>
-            
+
 
             <!-- Footer -->
             <div class="row">
