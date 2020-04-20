@@ -88,10 +88,7 @@ var mark = id => {
 var storeMark = id => {
     let currMark = parseFloat(document.getElementById(`${id}Mark`).innerText);
     let newMark = parseFloat(document.getElementById(`${id}NewMark`).value);
-    console.log(currMark);
-    console.log(newMark);
     currMark = (currMark+newMark)/2;
-    console.log(currMark);
     document.getElementById(`${id}Mark`).innerText = currMark;
     localStorage[`${id}`] = false;
     hide(id);

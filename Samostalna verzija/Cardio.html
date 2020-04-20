@@ -25,7 +25,8 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="assets/js/ourJs.js"></script>
-
+    <script src="assets/js/sortByLength.js"></script>
+    
 </head>
 
 <body class="is-preload" id="pozadina" onload="init()">
@@ -86,9 +87,9 @@
                 </div>
             </div>
         </div>
+        
         <br>
         <br>
-
 
 
         <div class="row">
@@ -112,9 +113,26 @@
                 <!-- Ovde možete videti pregled svih grupa treninga koji se održavaju u našim teretanama -->
             </div>
         </div>
-
-
-        <br><br><br>
+        <div class="row text-center" style="margin-top: 15px;">
+            <div class="col-1 title">
+                
+            </div>
+            <div class="col-10 title ">
+                <p >
+                    <i>
+                        <a href="#" onclick="sortByName('cardio')" class="link">Sortirano po imenu</a>
+                        /
+                        <a href="#" onclick="sortByLength('cardio')">Sortirano po trajanju</a>
+                        /
+                        <a href="#" onclick="sortByDifficulty('cardio')">Sortirano po težini</a>
+                    </i>
+                </p>
+            </div>
+            <div class="col-1 title">
+                
+            </div>
+        </div>
+        <br>
         <div class="row text-center">
             <div class="col-1">
                 &nbsp;
@@ -129,9 +147,9 @@
                             <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
                                 <br>
                                 <br>
-                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
+                                <div class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="cardioSlike1" >
                                         <div class="carousel-item active">
                                             <img src="images/Cardio/combat.png" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -148,7 +166,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="cardioText1">
                                 <br>
 
                                 <h2>
@@ -156,13 +174,13 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Bikram yoga</b> je dobila ime po Bikram Čouduriju i sadrži niz postavljenih poza
-                                    u sobi kao što
-                                    je sauna - obično podešena na 105 stepeni i 40% vlažnossti.
-                                    Choudhuri se suočio sa tužbama za seksualno zlostavljanje i uznemiravanje u SAD-u i
-                                    pobjegao u Meksiko 2017. godine.
-                                    Mnogi studiji koji su nekada bili Bikram studiji, sada praktikuju vruću jogu, u
-                                    nastojanju da se razdvoje od osnivača.
+                                    <b> Body Combat </b> je energičan trening koji kombinuje pokrete više borilačkih veština, koji će vam pomoći da budete fit, brzi i snažni. 
+                                    Nakon treninga Body Combata osećate se osnaženo i moćno.Body Combat koristi elemente karatea, tekvondoa, boksa, muai taia, kapoere i kung fua. 
+                                    Ali ne brinite, ne treba vam nikakvo iskustvo borilačkih veština – tokom zagrevanja instruktori će vam pokazati sve pokrete. Jačaćete kroz razne kikove, 
+                                    aperkate i krošee. 
+                                    Takođe se rade vežbe poput iskoraka, čučnjeva i sklekova.
+                                    <br>
+                                    Treninzi traju 55 minuta.
                                 </p>
 
                                 <!--   BUTTONS    -->
@@ -217,7 +235,7 @@
                 <div class="row">
                     <div class="tile col-12">
                         <div class="row">
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="cardioText2">
                                 <br>
                                 <br>
 
@@ -226,21 +244,20 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Yin yoga</b> se fokusira na vaša duboka vezna tkiva, poput fascija, ligamenata,
-                                    zglobova i kostiju.
-                                    Ona je sporija i meditativnija što vam daje prostor da se okrenete prema unutra i
-                                    regulišete kako vaš um, tako i fizičke senzacije vašeg tela.
-                                    Budući da držite poza duže vreme nego što je to slučaj sa drugim tradicionalnim
-                                    vrstama joge,
-                                    yin ioga vam pomaže da se istegnete i produžite ona retko korišćena tkiva,
-                                    a istovremeno vas uči kako disati kroz nelagodu i sedeti sa svojim mislima.
+                                    <b>RPM </b> je fantastični, pažljivo osmišljeni trening na biciklima, takav koji će vas zadovoljiti na nekoliko nivoa
+                                     – sagoreće brdo kalorija, napraviće od vas fitnes mašine i pri tom će vam stalno iznova i iznova podizati raspoloženje!
+                                    RPM je trening na biciklovima koji se dešava uz najmoćniju muziku koju možete zamisliti. 
+                                    Zahvaljujući treneru koji podstiče i inspiriše, konstantno imate utisak da vozite planinama, brdima i kroz šume. 
+                                    Otkrijte sportistu u sebi – izgorite kako biste podigli endorfin do neslućenih granica. 
+                                    <br>
+                                    Treninzi traju 30 minuta.
 
                                 </p>
 
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 5
+                                            Težina: &nbsp;&nbsp; 4
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
@@ -269,13 +286,13 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12" >
                                 <br>
                                 <br>
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
                                     
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="cardioSlike2">
                                         <div class="carousel-item active">
                                             <img src="images/Cardio/rpm1.png" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -308,7 +325,7 @@
                                 <br>
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="cardioSlike3">
                                         <div class="carousel-item active">
                                             <img src="images/Cardio/step4.png" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -325,7 +342,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="cardioText3" >
                                 <br>
 
                                 <h2>
@@ -333,14 +350,15 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Prenatalna yoga</b> je savršena aktivnost za trudnice jer pruža psihofizičku
-                                    pripremu za porođaj,
-                                    opušta i smiruje telo, uči pravilnom držanju i ono što je možda i najlepše
-                                    upoznaćete gomilu mama
-                                    koje dele iste brige kao i vi!
-                                    Program Prenatal yoge je takav da se prilagođava trimestru u kome se trenutno
-                                    nalazite,
-                                    tako da ćete uvek vežbati bezbedno i u granicama svog trenutnog stanja i mogućnosti.
+                                    <b>Body step</b> je energični trening sa steperom koji čini da se osećate slobodnim tokom treninga.  
+                                    Ako saberemo podesive stepere, jednostavne korake (preko ili oko stepera) sa sjajnom muzikom koju svi pevaju 
+                                    i dostpunim instruktorom, koga ćete lako pratiti, imaćete sjajan trening. 
+                                    Kardio blokovi će probuditi vaš sistem za sagorevanje kalorija i ubaciti ga u sledeću brzinu, 
+                                    sve to praćeno kondicionim pesmama koje će oblikovati vaše telo.
+                                    Za sve one koji bi želeli da pojačaju intezitet treninga i ostvare fenomenalne rezultate – 
+                                    kružni funkcionalni trening Body step je idealan izbor.
+                                    <br>
+                                    Treninzi traju 45 minuta.
                                 </p>
 
                                 <div class="row">

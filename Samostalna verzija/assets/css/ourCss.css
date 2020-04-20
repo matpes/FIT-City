@@ -30,6 +30,16 @@
     clear: both;
 }
 
+p i a{
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+}
+
+p i a:hover{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
 ul li a{
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;

@@ -25,6 +25,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
         <script src="assets/js/ourJs.js"></script>
+        <script src="assets/js/sortByLength.js"></script>
 </head>
 
 <body class="is-preload" id="pozadina">
@@ -112,7 +113,27 @@
                 <!-- Ovde možete videti pregled svih grupa treninga koji se održavaju u našim teretanama -->
             </div>
         </div>
-        <br><br>
+        <div class="row text-center" style="margin-top: 15px;">
+            <div class="col-1 title">
+                
+            </div>
+            <div class="col-10 title ">
+                <p >
+                    <i>
+                        <a href="#" onclick="sortByName('pilates')" class="link">Sortirano po imenu</a>
+                        /
+                        <a href="#" onclick="sortByLength('pilates')">Sortirano po trajanju</a>
+                        /
+                        <a href="#" onclick="sortByDifficulty('pilates')">Sortirano po težini</a>
+                    </i>
+                </p>
+            </div>
+            <div class="col-1 title">
+                
+            </div>
+        </div>
+
+        <br>
         <div class="row text-center">
             <div class="col-1">
                 &nbsp;
@@ -122,12 +143,12 @@
                 <div class="row">
                     <div class="tile col-12">
                         <div class="row">
-                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12" >
                                 <br>
                                 <br>
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="pilatesSlike1">
                                         <div class="carousel-item active">
                                             <img src="images/Pilates/klasicni1.jpg"
                                                 class="d-block w-100 img-fluid circle" alt="home3">
@@ -144,7 +165,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="pilatesText1">
                                 <br>
 
                                 <h2>
@@ -161,11 +182,13 @@
                                     mišiće-držače
                                     koji su važni za održavanje tela u ravnoteži, a od suštinskog su značaja za
                                     podržavanje normalnog stanja kičmenog stuba.
+                                    <br>
+                                    Treninzi traju 30 minuta.
                                 </p>
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 5
+                                            Težina: &nbsp;&nbsp; 4.5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
@@ -211,7 +234,7 @@
                 <div class="row">
                     <div class="tile col-12">
                         <div class="row">
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="pilatesText2">
                                 <br>
 
                                 <h2>
@@ -227,6 +250,8 @@
                                     smanjiti bolove u leđima i tenzije u mišićima karlice. Ovakvim treningom izgradi
                                     ćete telo vitkog mišićnog tonusa,
                                     zavidne snage i pokretljivosti a pre svega zdravog duha.
+                                    <br>
+                                    Treninzi traju 30 minuta.
 
                                 </p>
                                 <div class="row">
@@ -267,7 +292,7 @@
 
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="pilatesSlike2">
                                         <div class="carousel-item active">
                                             <img src="images/Pilates/stott11.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -300,7 +325,7 @@
                                 <br>
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="pilatesSlike3">
                                         <div class="carousel-item">
                                             <img src="images/Pilates/reformer1.jpg"
                                                 class="d-block w-100 img-fluid circle" alt="home3">
@@ -317,7 +342,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="pilatesText3">
                                 <br>
 
                                 <h2>
@@ -333,6 +358,8 @@
                                     Prednost vežbanja na reformeru je u simetriji, odnosno jednakom opterećenju leve i
                                     desne strane
                                     prilikom vežbanja.
+                                    <br>
+                                    Treninzi traju 30 minuta.
                                 </p>
 
                                 <div class="row">

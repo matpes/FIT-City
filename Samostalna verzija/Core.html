@@ -25,6 +25,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="assets/js/ourJs.js"></script>
+    <script src="assets/js/sortByLength.js"></script>
 </head>
 
 <body class="is-preload" id="pozadina" onload="init()">
@@ -110,7 +111,26 @@
             </div>
         </div>
 
-        <br><br><br>
+        <div class="row text-center" style="margin-top: 15px;">
+            <div class="col-1 title">
+                
+            </div>
+            <div class="col-10 title ">
+                <p >
+                    <i>
+                        <a href="#" onclick="sortByName('core')" class="link">Sortirano po imenu</a>
+                        /
+                        <a href="#" onclick="sortByLength('core')">Sortirano po trajanju</a>
+                        /
+                        <a href="#" onclick="sortByDifficulty('core')">Sortirano po težini</a>
+                    </i>
+                </p>
+            </div>
+            <div class="col-1 title">
+                
+            </div>
+        </div>
+        <br>
         <div class="row text-center">
             <div class="col-1">
                 &nbsp;
@@ -123,7 +143,7 @@
                             <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="coreSlike1">
                                         <div class="carousel-item ">
                                             <img src="images/Core/cxworx1.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -140,7 +160,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="coreText1">
                                 <br>
 
                                 <h2>
@@ -148,13 +168,12 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Bikram yoga</b> je dobila ime po Bikram Čouduriju i sadrži niz postavljenih poza
-                                    u sobi kao što
-                                    je sauna - obično podešena na 105 stepeni i 40% vlažnossti.
-                                    Choudhuri se suočio sa tužbama za seksualno zlostavljanje i uznemiravanje u SAD-u i
-                                    pobjegao u Meksiko 2017. godine.
-                                    Mnogi studiji koji su nekada bili Bikram studiji, sada praktikuju vruću jogu, u
-                                    nastojanju da se razdvoje od osnivača.
+                                    <b>CXWORX</b> fokusiran je na torso i na mišiće koji povezuju gornji i donji deo tela. 
+                                    Idealan je za zatezanje stomaka i zadnjice, za unapređenje funkcionalne snage, kao i za predupređenje povreda.
+                                    Sastoji se od tridesetominutnih treninga koji koriste težinu tela, otpornih traka i tegova kako bi zategli i tonirali vaše mišiće.
+                                    Trake se obmotavaju oko tela na različite načine kako bi dovele do što većeg otpora tela pri izvođenju vežbi.
+                                    <br>
+                                    Treninzi traju 30 minuta.
                                 </p>
                                 <div class="row">
 
@@ -177,7 +196,7 @@
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
                                             Ocena: &nbsp;&nbsp;
-                                            <span id=coreCom1Mark> 3</span>
+                                            <span id=coreCom1Mark> 5</span>
 
                                         </p>
 
@@ -202,11 +221,11 @@
                 <br>
                 <br>
 
-                <!--            YIN YOGA             -->
+                <!--            BODYWEIGHT             -->
                 <div class="row">
                     <div class="tile col-12">
                         <div class="row">
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="coreText2">
                                 <br>
 
                                 <h2>
@@ -214,20 +233,17 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Yin yoga</b> se fokusira na vaša duboka vezna tkiva, poput fascija, ligamenata,
-                                    zglobova i kostiju.
-                                    Ona je sporija i meditativnija što vam daje prostor da se okrenete prema unutra i
-                                    regulišete kako vaš um, tako i fizičke senzacije vašeg tela.
-                                    Budući da držite poza duže vreme nego što je to slučaj sa drugim tradicionalnim
-                                    vrstama joge,
-                                    yin ioga vam pomaže da se istegnete i produžite ona retko korišćena tkiva,
-                                    a istovremeno vas uči kako disati kroz nelagodu i sedeti sa svojim mislima.
+                                    <b>Bodzweight</b> trening predstavlja razvijanje vašeg tela korišćenjem samo njegove sopstvene težine.
+                                    Ovi treninzi su veoma dobri, jer se mogu sprovoditi i kod kuće. Nikakva dodatna operma nije potrebna.
+                                    Ovi treninzi mogu biti kako individualni, tako i grupni. Najčešće vežbe u ovoj grupi su trbušnjaci i leđnjaci.
+                                    <br>
+                                    Treninzi obično traju do 45 minuta.
 
                                 </p>
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 5
+                                            Težina: &nbsp;&nbsp; 4
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
@@ -244,7 +260,7 @@
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
                                             Ocena: &nbsp;&nbsp;
-                                            <span id=coreCom2Mark> 5</span>
+                                            <span id=coreCom2Mark> 4.5</span>
                                         </p>
                                     </div>
                                 </div>
@@ -256,10 +272,10 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12" >
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="coreSlike2">
                                         <div class="carousel-item active">
                                             <img src="images/Core/body.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -283,14 +299,14 @@
                 <br>
                 <br>
 
-                <!--            PRENATAL YOGA             -->
+                <!--            PLANK             -->
                 <div class="row">
                     <div class="tile col-12">
                         <div class="row">
                             <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="coreSlike3">
                                         <div class="carousel-item active">
                                             <img src="images/Core/core4.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -307,7 +323,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="coreText3">
                                 <br>
 
                                 <h2>
@@ -315,20 +331,19 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Prenatalna yoga</b> je savršena aktivnost za trudnice jer pruža psihofizičku
-                                    pripremu za porođaj,
-                                    opušta i smiruje telo, uči pravilnom držanju i ono što je možda i najlepše
-                                    upoznaćete gomilu mama
-                                    koje dele iste brige kao i vi!
-                                    Program Prenatal yoge je takav da se prilagođava trimestru u kome se trenutno
-                                    nalazite,
-                                    tako da ćete uvek vežbati bezbedno i u granicama svog trenutnog stanja i mogućnosti.
+                                    <b>Plank</b> je trening koji testira vašu izdržljivost.
+                                    Svakim treningom pomeramo granice vaše izdržljivosti sve više i više.
+                                    Tokom ovih treninga trbušni mišići se najviše naprežu, kako bi održavali vaše telo u pravilnom položaju. 
+                                    Osim obicnog položaja, naslonjeni na laktovima, raširenih nogu, tokom treninga se sprovode različiti pokreti,
+                                    kako bi ciljali sve mišiče tela.
+                                    <br>
+                                    Treninzi traju oko 20 minuta.
                                 </p>
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-3 description">
                                         <p class="description text-center">
-                                            Težina: &nbsp;3.5
+                                            Težina: &nbsp;4.5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
@@ -346,7 +361,7 @@
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
                                             Ocena: &nbsp;&nbsp;
-                                            <span id=coreCom3Mark> 5</span>
+                                            <span id=coreCom3Mark> 3.5</span>
                                         </p>
                                     </div>
                                 </div>

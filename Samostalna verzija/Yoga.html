@@ -25,6 +25,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="assets/js/ourJs.js"></script>
+    <script src="assets/js/sortByLength.js"></script>
 </head>
 
 <body class="is-preload" id="pozadina">
@@ -143,7 +144,27 @@
         </div>
 
 
-        <br><br><br>
+        <br>
+        <div class="row text-center" style="margin-top: 15px;">
+            <div class="col-1 title">
+                
+            </div>
+            <div class="col-10 title ">
+                <p >
+                    <i>
+                        <a href="#" onclick="sortByName('yoga')" class="link">Sortirano po imenu</a>
+                        /
+                        <a href="#" onclick="sortByLength('yoga')">Sortirano po trajanju</a>
+                        /
+                        <a href="#" onclick="sortByDifficulty('yoga')">Sortirano po težini</a>
+                    </i>
+                </p>
+            </div>
+            <div class="col-1 title">
+                
+            </div>
+        </div>
+        <br><br>
         <div class="row text-center">
             <div class="col-1">
                 &nbsp;
@@ -158,7 +179,7 @@
                                 <br>
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id=yogaSlike1>
                                         <div class="carousel-item active">
                                             <img src="images/yoga/birkam1.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -175,7 +196,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="yogaText1">
                                 <br>
 
                                 <h2>
@@ -190,11 +211,13 @@
                                     pobjegao u Meksiko 2017. godine.
                                     Mnogi studiji koji su nekada bili Bikram studiji, sada praktikuju vruću jogu, u
                                     nastojanju da se razdvoje od osnivača.
+                                    <br>
+                                    Treninzi traju 35 minuta.
                                 </p>
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 5
+                                            Težina: &nbsp;&nbsp; 4.5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
@@ -211,7 +234,7 @@
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
                                             Ocena: &nbsp;&nbsp;
-                                            <span id=yogaCom1Mark> 5</span>
+                                            <span id=yogaCom1Mark> 2.5</span>
 
                                         </p>
                                     </div>
@@ -240,7 +263,7 @@
                 <div class="row">
                     <div class="tile col-12">
                         <div class="row">
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="yogaText2">
                                 <br>
 
                                 <h2>
@@ -256,12 +279,14 @@
                                     vrstama joge,
                                     yin ioga vam pomaže da se istegnete i produžite ona retko korišćena tkiva,
                                     a istovremeno vas uči kako disati kroz nelagodu i sedeti sa svojim mislima.
+                                    <br>
+                                    Treninzi traju 30 minuta.
 
                                 </p>
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 5
+                                            Težina: &nbsp;&nbsp; 3.5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
@@ -278,7 +303,7 @@
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
                                             Ocena: &nbsp;&nbsp;
-                                            <span id=yogaCom2Mark> 5</span>
+                                            <span id=yogaCom2Mark> 4.5</span>
                                         </p>
                                     </div>
                                 </div>
@@ -296,7 +321,7 @@
 
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="yogaSlike2">
                                         <div class="carousel-item active">
                                             <img src="images/yoga/yin1.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -330,7 +355,7 @@
 
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    <div class="carousel-inner padding">
+                                    <div class="carousel-inner padding" id="yogaSlike3">
                                         <div class="carousel-item">
                                             <img src="images/yoga/prenatal2.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -347,7 +372,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="yogaText3">
                                 <br>
 
                                 <h2>
@@ -363,12 +388,14 @@
                                     Program Prenatal yoge je takav da se prilagođava trimestru u kome se trenutno
                                     nalazite,
                                     tako da ćete uvek vežbati bezbedno i u granicama svog trenutnog stanja i mogućnosti.
+                                    <br>
+                                    Treninzi traju 30 minuta.
                                 </p>
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-4 description">
                                         <p class="description text-center">
-                                            Težina: &nbsp;3.5
+                                            Težina: &nbsp;5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-4 text-center">
