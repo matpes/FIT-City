@@ -119,8 +119,7 @@ footer{
 
 #pozadina{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    background: url('../../images/bg.jpg') no-repeat;
-    background-blend-mode: lighten;
+    background: url('../../images/bg.jpg') no-repeat fixed;
     background-size: cover;
 }
 
