@@ -24,9 +24,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="assets/js/ourJs.js"></script>
 </head>
 
-<body class="is-preload" id="pozadina">
+<body class="is-preload" id="pozadina" onload="initZak(); reload('RPMZak')">
 
 
 
@@ -67,18 +68,20 @@
                                         </a>
                                         <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
-                                            <a class="dropdown-item white bg-dark" href="#"> NUTRICIONISTA</a>
-                                            <a class="dropdown-item white bg-dark" href="#">MASAŽE</a>
+                                            <a class="dropdown-item white bg-dark" href="Nutricionista.html">
+                                                NUTRICIONISTA</a>
+                                            <a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link active"> ZAKAZIVANJE TRENINGA </a>
+                                        <a href="ZakazivanjeTreninga.html" class="nav-link active"> ZAKAZIVANJE TRENINGA
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link"> MOJ NALOG </a>
+                                        <a href="Moj_Nalog.html" class="nav-link"> MOJ NALOG </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link"> O NAMA </a>
+                                        <a href="Onama.html" class="nav-link"> O NAMA </a>
                                     </li>
 
                                 </ul>
@@ -144,7 +147,7 @@
                                         <th>Utorak</th>
                                         <th>Sreda</th>
                                         <th>Cetvrtak</th>
-                                        <th>Petka</th>
+                                        <th>Petak</th>
                                         <th>Subota</th>
                                         <th>Nedelja</th>
                                     </tr>
@@ -154,13 +157,13 @@
                                     <td>
                                     </td>
                                     <td>
-                                        
+
                                     </td>
                                     <td>
                                     </td>
                                     <td></td>
                                     <td>
-                                        
+
 
                                     </td>
                                     <td>
@@ -198,19 +201,19 @@
 
                                     </td>
                                     <td>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>13:00</td>
                                     <td></td>
                                     <td>
-                                       
+
                                     </td>
                                     <td></td>
                                     <td></td>
                                     <td>
-                                       
+
                                     </td>
                                     <td></td>
                                     <td></td>
@@ -230,7 +233,7 @@
 
                                     </td>
                                     <td>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -250,7 +253,7 @@
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        
+
                                     </td>
                                     <td></td>
                                     <td></td>
@@ -258,27 +261,31 @@
                                 <tr>
                                     <td>17:00</td>
                                     <td>
-                                        
+
                                     </td>
                                     <td>
-                                        SM:8
+                                        SM:
+                                        <span id="RPMZakSM1"> </span>
                                         <br>
-                                        <a href="#" class="btn btn-dark btn-pos" tabindex="-1" role="button"
-                                            aria-disabled="false">Rezervisi</a>
+                                        <button class="btn btn-dark btn-pos" id=RPMZakButton1
+                                            onclick="reserve('RPMZak',1, '17:00', 'Utorak')"> Rezervisi</button>
+
                                     </td>
                                     <td>
-                                        
+
                                     </td>
                                     <td>
                                     </td>
                                     <td>
-                                        SM:10
+                                        SM:
+                                        <span id="RPMZakSM2"> </span>
                                         <br>
-                                        <a href="#" class="btn btn-dark btn-pos" tabindex="-1" role="button"
-                                            aria-disabled="false">Rezervisi</a>
+                                        <button class="btn btn-dark btn-pos" id=RPMZakButton2
+                                            onclick="reserve('RPMZak',2, '17:00', 'Petak')"> Rezervisi</button>
+
                                     </td>
                                     <td>
-                                        
+
                                     </td>
                                     <td></td>
                                 </tr>
@@ -287,7 +294,7 @@
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        
+
                                     </td>
                                     <td></td>
                                     <td></td>
@@ -297,19 +304,19 @@
                                 <tr>
                                     <td>19:00</td>
                                     <td>
-                                        
+
                                     </td>
                                     <td></td>
                                     <td>
-                                       
+
                                     </td>
                                     <td></td>
                                     <td>
-                                        
+
                                     </td>
                                     <td></td>
                                     <td>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -327,19 +334,21 @@
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        SM:19
+                                        SM:
+                                        <span id="RPMZakSM3"> </span>
                                         <br>
-                                        <a href="#" class="btn btn-dark btn-pos" tabindex="-1" role="button"
-                                            aria-disabled="false">Rezervisi</a>
+                                        <button class="btn btn-dark btn-pos" id=RPMZakButton3 onclick="reserve('RPMZak', 3, '21:00', 'Sreda')"> Rezervisi</button>
+                                    
                                     </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        SM:18
+                                        SM:
+                                        <span id="RPMZakSM4"> </span>
                                         <br>
-                                        <a href="#" class="btn btn-dark btn-pos" tabindex="-1" role="button"
-                                            aria-disabled="false">Rezervisi</a>
+                                        <button class="btn btn-dark btn-pos" id=RPMZakButton4 onclick="reserve('RPMZak', 4, '21:00', 'Nedelja')"> Rezervisi</button>
+                                    
                                     </td>
                                 </tr>
                             </table>

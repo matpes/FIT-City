@@ -23,10 +23,11 @@
 		crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-		crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+        <script src="assets/js/ourJs.js"></script>
 </head>
 
-<body class="is-preload" id="pozadina">
+<body class="is-preload" id="pozadina" onload="initZak(); reload('birkamZak')">
 
 
 
@@ -67,18 +68,18 @@
 										</a>
 										<div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
 											<a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
-											<a class="dropdown-item white bg-dark" href="#"> NUTRICIONISTA</a>
-											<a class="dropdown-item white bg-dark" href="#">MASAŽE</a>
+											<a class="dropdown-item white bg-dark" href="Nutricionista.html"> NUTRICIONISTA</a>
+											<a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
 										</div>
 									</li>
 									<li class="nav-item">
-										<a href="index.html" class="nav-link active"> ZAKAZIVANJE TRENINGA </a>
+										<a href="ZakazivanjeTreninga.html" class="nav-link active"> ZAKAZIVANJE TRENINGA </a>
 									</li>
 									<li class="nav-item">
-										<a href="index.html" class="nav-link"> MOJ NALOG </a>
+										<a href="Moj_Nalog.html" class="nav-link"> MOJ NALOG </a>
 									</li>
 									<li class="nav-item">
-										<a href="index.html" class="nav-link"> O NAMA </a>
+										<a href="Onama.html" class="nav-link"> O NAMA </a>
 									</li>
 
 								</ul>
@@ -151,17 +152,25 @@
                             </thead>
                                 <tr>
                                     <td>10:00</td>
-                                    <td>SM: 0
+                                    <td>
+                                        SM: 
+                                        <span id="birkamZakSM1">
+                                            0
+                                        </span>
+                                        
                                         <br>
-                                        <a href="#" class="btn btn-dark btn-pos disabled" tabindex="-1" role="button" aria-disabled="true">Rezervisi</a>
+                                        <a href="#" id=birkamZakButton1 class="btn btn-dark btn-pos disabled" onclick="reserve('birkamZak',1, '10:00', 'Ponedeljak')" tabindex="-1" role="button" aria-disabled="true">Rezervisi</a>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        SM: 0
+                                        SM: 
+                                        <span id="birkamZakSM2">
+                                            0
+                                        </span>
                                         <br>
-                                        <a href="#" class="btn btn-dark btn-pos disabled" tabindex="-1" role="button" aria-disabled="true">Rezervisi</a>
+                                        <a href="#" id=birkamZakButton2 class="btn btn-dark btn-pos disabled" onclick="reserve('birkamZak',2, '10:00', 'Subota')" tabindex="-1" role="button" aria-disabled="true">Rezervisi</a>
                                     </td>
                                     <td></td>
                                 </tr>
@@ -180,9 +189,12 @@
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        SM: 5
+                                        SM: 
+                                        <span id="birkamZakSM3">
+                                            5
+                                        </span>
                                         <br>
-                                        <button class="btn btn-dark btn-pos"> Rezervisi</button>
+                                        <button class="btn btn-dark btn-pos" id=birkamZakButton3 onclick="reserve('birkamZak',3, '12:00', 'Sreda')"> Rezervisi</button>
                                     </td>
                                     <td></td>
                                     <td></td>
