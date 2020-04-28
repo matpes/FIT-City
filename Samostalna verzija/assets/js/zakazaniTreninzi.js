@@ -121,7 +121,7 @@ var sortTreninge = () => {
     console.log(new Date());
     //console.log(predstojeciTreninzi);
     //console.log(poseceniTreninzi);
-
+    return poseceniTreninzi;
 
 }
 

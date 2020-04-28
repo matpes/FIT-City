@@ -66,6 +66,11 @@ var klasican = {
 
 
             </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailpilatesCom1>
+                                                
+                </span>
+            </div>
         </div>
     </form>`
 }
@@ -133,6 +138,11 @@ var stott = {
         <div class="row">
             <div class="col-12 form-group" id="pilatesCom2">
 
+            </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailpilatesCom2>
+                                                
+                </span>
             </div>
         </div>
     </form>`
@@ -204,6 +214,11 @@ var reformer = {
             <div class="col-12 form-group" id="pilatesCom3">
 
             </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailpilatesCom3>
+                                                
+                </span>
+            </div>
         </div>
     </form>`
 }
@@ -272,6 +287,11 @@ var cxworx = {
 
 
             </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailcoreCom1>
+                                                
+                </span>
+            </div>
         </div>
     </form>`
 }
@@ -334,6 +354,11 @@ var bodyweight = {
         <div class="row">
             <div class="col-12 form-group" id="coreCom2">
 
+            </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailcoreCom2>
+                                                
+                </span>
             </div>
         </div>
     </form>`
@@ -401,6 +426,11 @@ var plank = {
         <div class="row">
             <div class="col-12 form-group" id="coreCom3">
 
+            </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailcoreCom3>
+                                                
+                </span>
             </div>
         </div>
     </form>`
@@ -472,6 +502,11 @@ var prenatal = {
             <div class="col-12 form-group" id="yogaCom3">
 
             </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailyogaCom3>
+                                                
+                </span>
+            </div>
         </div>
     </form>`
 
@@ -540,6 +575,11 @@ var yin = {
         <div class="row">
             <div class="col-12 form-group" id="yogaCom2">
 
+            </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailyogaCom2>
+                                                
+                </span>
             </div>
         </div>
     </form>`
@@ -612,6 +652,11 @@ var bikram = {
 
 
             </div>
+            <div class="col-12 form-group">
+            <span id=ocenaFailyogaCom1>
+                                           
+           </span>
+       </div>
         </div>
     </form>`
 
@@ -682,6 +727,11 @@ var bodyCombat = {
 
 
             </div>
+            <div class="col-12 form-group">
+                 <span id=ocenaFailcardioCom1>
+                                                
+                </span>
+            </div>
         </div>
     </form>`,
     trajanje: 55
@@ -750,6 +800,11 @@ var rpm = {
 
             </div>
         </div>
+        <div class="col-12 form-group">
+                 <span id=ocenaFailcardioCom2>
+                                                
+                </span>
+            </div>
     </form>`,
     trajanje: 30
 }
@@ -818,6 +873,11 @@ text: `<br>
     <div class="row">
         <div class="col-12 form-group" id="cardioCom3">
 
+        </div>
+        <div class="col-12 form-group">
+                 <span id=ocenaFailcardioCom3>
+                                                
+                </span>
         </div>
     </div>
 </form>`

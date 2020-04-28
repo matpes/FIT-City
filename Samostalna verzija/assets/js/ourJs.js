@@ -57,19 +57,9 @@ var showComents = id => {
 
 
 
-var displayComents = id => {
-    insertCom(id);
-    document.getElementById(id).innerHTML += `<textarea name="kom" id="komentar${id}" rows="2" cols="100" class="form-control bg-dark komentar"></textarea>\
-    <br>\
-    </li>
-    </ul>
-    <input type="button" value="Postavi" id="komentar2" name="kom" class="btn bg-dark btn-pos btn-middle" onclick="setKom('${id}')">\
-    <button type="button" class="button btn bg-dark btn-pos btn-middle" onclick="hide('${id}')"> Sakrij </button>`
-
-}
-
 var hide = id => {
     document.getElementById(id).innerHTML = ''
+    $(`#ocenaFail${id}`).hide();
 }
 
 var init = () => {
@@ -156,6 +146,35 @@ var initZak = () => {
         localStorage.stepZakSM3 = 4;
     }
 }
+
+
+var setKom = id => {
+    if (canPost(id)) {
+        let com = document.getElementById(`komentar${id}`).value;
+        if (com !== '') {
+            comments[`${id}`].push(com);
+            localStorage.comments = JSON.stringify(comments);
+            displayComents(id);
+        }
+    }else{
+        $(`#komentar${id}`).addClass('napomena');
+        $(`#komentar${id}`).val('Ne mozete komentarisati jer niste posetili ovaj trening.');
+        //alert("Niste nikada posetili ovaj trening!");
+    }
+}
+
+
+var displayComents = id => {
+    insertCom(id);
+    document.getElementById(id).innerHTML += `<textarea name="kom" id="komentar${id}" rows="2" cols="100" class="form-control bg-dark komentar"></textarea>\
+    <br>\
+    </li>
+    </ul>
+    <input type="button" value="Postavi" id="komentar2" name="kom" class="btn bg-dark btn-pos btn-middle" onclick="setKom('${id}')">\
+    <button type="button" class="button btn bg-dark btn-pos btn-middle" onclick="hide('${id}')"> Sakrij </button>`
+
+}
+
 var insertCom = id => {
     document.getElementById(id).innerHTML = '';
     comments = JSON.parse(localStorage.comments);
@@ -165,15 +184,6 @@ var insertCom = id => {
         document.getElementById(id).innerHTML += `</textarea><br>`;
     })
 
-}
-
-var setKom = id => {
-    let com = document.getElementById(`komentar${id}`).value;
-    if (com !== '') {
-        comments[`${id}`].push(com);
-        localStorage.comments = JSON.stringify(comments);
-        displayComents(id);
-    }
 }
 
 var mark = id => {
@@ -196,13 +206,19 @@ var mark = id => {
 }
 
 var storeMark = id => {
-    let currMark = parseFloat(document.getElementById(`${id}Mark`).innerText);
-    let newMark = parseFloat(document.getElementById(`${id}NewMark`).value);
-    currMark = (currMark + newMark) / 2;
-    document.getElementById(`${id}Mark`).innerText = currMark;
-    localStorage[`${id}Mark`] = currMark;
-    localStorage[`${id}`] = false;
-    hide(id);
+    if (canPost(id)) {
+        let currMark = parseFloat(document.getElementById(`${id}Mark`).innerText);
+        let newMark = parseFloat(document.getElementById(`${id}NewMark`).value);
+        currMark = (currMark + newMark) / 2;
+        document.getElementById(`${id}Mark`).innerText = currMark;
+        localStorage[`${id}Mark`] = currMark;
+        localStorage[`${id}`] = false;
+        hide(id);
+    }else{
+        $(`#ocenaFail${id}`).show();
+        $(`#ocenaFail${id}`).addClass('napomena');
+        $(`#ocenaFail${id}`).text('Ne mozete oceniti trening ga niste posetili nijednom.');
+    }
 }
 
 var loadMark = id => {
@@ -287,4 +303,20 @@ var reload = trening => {
     }
 
 
+}
+
+
+var canPost = naziv => {
+    let poseceni = sortTreninge();
+    let regex = /(.*)Com.$/;
+    let praviNaziv = regex.exec(naziv)[1];
+    //console.log(praviNaziv);
+    praviNaziv+='Zak';
+    let ret = false;
+    for (let i = 0; i < poseceni.length; i++){
+        if(poseceni[i].name == praviNaziv){
+            return true;
+        }
+    }
+    return false;
 }

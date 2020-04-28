@@ -24,11 +24,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <script src="assets/js/ourJs.js"></script>
-        <script src="assets/js/sortByLength.js"></script>
+    <script src="assets/js/ourJs.js"></script>
+    <script src="assets/js/sortByLength.js"></script>
+    <script src="assets/js/zakazaniTreninzi.js"></script>
 </head>
 
-<body class="is-preload" id="pozadina" onload="init(); loadMark('pilatesCom1Mark'); loadMark('pilatesCom2Mark'); loadMark('pilatesCom3Mark')">
+<body class="is-preload" id="pozadina"
+    onload="init(); loadMark('pilatesCom1Mark'); loadMark('pilatesCom2Mark'); loadMark('pilatesCom3Mark')">
 
 
 
@@ -66,7 +68,8 @@
                                     </a>
                                     <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
-                                        <a class="dropdown-item white bg-dark" href="Nutricionista.html"> NUTRICIONISTA</a>
+                                        <a class="dropdown-item white bg-dark" href="Nutricionista.html">
+                                            NUTRICIONISTA</a>
                                         <a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
                                     </div>
                                 </li>
@@ -115,10 +118,10 @@
         </div>
         <div class="row text-center" style="margin-top: 15px;">
             <div class="col-1 title">
-                
+
             </div>
             <div class="col-10 title ">
-                <p >
+                <p>
                     <i>
                         <a href="#" onclick="sortByName('pilates')" class="link">Sortirano po imenu</a>
                         /
@@ -129,7 +132,7 @@
                 </p>
             </div>
             <div class="col-1 title">
-                
+
             </div>
         </div>
 
@@ -143,7 +146,7 @@
                 <div class="row">
                     <div class="tile col-12">
                         <div class="row">
-                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12" >
+                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
                                 <br>
                                 <br>
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
@@ -218,6 +221,11 @@
 
 
                                         </div>
+                                        <div class="col-12 form-group">
+                                            <span id=ocenaFailpilatesCom1>
+                                                
+                                            </span>
+                                        </div>
                                     </div>
                                 </form>
 
@@ -282,6 +290,11 @@
                                     <div class="row">
                                         <div class="col-12 form-group" id="pilatesCom2">
 
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <span id=ocenaFailpilatesCom2>
+                                                
+                                            </span>
                                         </div>
                                     </div>
                                 </form>
@@ -393,6 +406,12 @@
                                         <div class="col-12 form-group" id="pilatesCom3">
 
                                         </div>
+                                        <div class="col-12 form-group">
+                                            <span id=ocenaFailpilatesCom3>
+                                                
+                                            </span>
+                                        </div>
+
                                     </div>
                                 </form>
 
