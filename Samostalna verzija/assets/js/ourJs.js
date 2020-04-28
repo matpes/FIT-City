@@ -13,11 +13,37 @@ var comments = {
     yogaCom3: []
 }
 class MojTrening {
-    constructor(name, time, day) {
+    constructor(name, time, day, milis, number) {
         this.name = name;
         this.time = time;
         this.day = day;
+        this.milis = milis;
+        this.number = number
     }
+
+}
+
+var getDay = () => {
+    let date1 = new Date();
+    let time1 = '10:00'
+    let time2 = date1.getHours() + ':' + date1.getMinutes();
+    if (time2.localeCompare(time1) == 1) {
+        console.log(time1 + " je pre " + time2);
+    } else {
+        console.log(time2 + " je pre " + time1);
+    }
+    //let date2 = new Date('4/27/2020');
+    //alert("Danas je " + date1.getMinutes() + ", a standard je " + date2.getMinutes());
+}
+
+var dani = {
+    Ponedeljak: 1,
+    Utorak: 2,
+    Sreda: 3,
+    Cetvrtak: 4,
+    Petak: 5,
+    Subota: 6,
+    Nedelja: 7 //Inace 0
 
 }
 
@@ -62,6 +88,21 @@ var init = () => {
     localStorage['yogaCom1'] = false;
     localStorage['yogaCom2'] = false;
     localStorage['yogaCom3'] = false;
+}
+
+var initPoseceni = () => {
+
+    if (!(typeof sessionStorage.mojiTreninzi !== 'undefined')) {
+        mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Ponedeljak', new Date('4/27/2020'), 1));
+        mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Sreda', new Date('4/22/2020'), 2));
+        mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Petak', new Date('4/24/2020'), 3));
+        mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Nedelja', new Date('4/26/2020'), 4));
+        mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Ponedeljak', new Date('4/20/2020'), 1));
+
+
+
+        sessionStorage.mojiTreninzi = JSON.stringify(mojiTreninzi);
+    }
 }
 
 var initZak = () => {
@@ -113,8 +154,6 @@ var initZak = () => {
         localStorage.stepZakSM1 = 4;
         localStorage.stepZakSM2 = 3;
         localStorage.stepZakSM3 = 4;
-
-        sessionStorage.mojiTreninzi = JSON.stringify(mojiTreninzi);
     }
 }
 var insertCom = id => {
@@ -183,7 +222,28 @@ var reserve = (trening, rdBr, time, day) => {
         document.getElementById(trening + 'Button' + rdBr).disabled = true;
         document.getElementById(trening + 'Button' + rdBr).classList.add('disabled');
     }
-    mojiTreninzi.push(new MojTrening(trening, time, day));
+    let date1 = new Date();
+    let month1 = date1.getMonth(); //mesec
+    month1++; //Zato sto Januar vraca kao 0, a kad upisujes trazi 1
+    let dateDay1 = date1.getDate(); //dan u mesecu
+    let day1 = date1.getDay(); //rd br dana
+    day1 = ((day1 == 0) ? 7 : day1);
+    let offset = dani[`${day}`] - day1;
+    //let date1chopped = new Date(month1 + '/' + dateDay1 + '/2020'); //Danasnji datum resetovan na 00:00
+    let time1 = date1.getHours() + ':' + date1.getMinutes();
+    if (offset == 0 && time1.localeCompare(time) == 1) {//Zakazuje se trening za danas, Trening je sledece nedelje 
+        offset = 7;
+    }
+    dateDay1 += offset;
+    if (dateDay1 > 30) {
+        month1++;
+        dateDay1 -= 30;
+    }
+    let date1chopped = new Date(month1 + '/' + dateDay1 + '/2020');
+    date1chopped.setHours(`${time[0]}${time[1]}`);
+
+    mojiTreninzi = JSON.parse(sessionStorage.mojiTreninzi);
+    mojiTreninzi.push(new MojTrening(trening, time, day, date1chopped, rdBr));
 
     sessionStorage.mojiTreninzi = JSON.stringify(mojiTreninzi);
 
@@ -194,21 +254,21 @@ var reload = trening => {
     document.getElementById(trening + 'SM1').innerText = localStorage[trening + 'SM1'];
     document.getElementById(trening + 'SM2').innerText = localStorage[trening + 'SM2'];
 
-    if ( typeof localStorage[trening + 'SM3'] === 'undefined') {
-        
-    }else{
+    if (typeof localStorage[trening + 'SM3'] === 'undefined') {
+
+    } else {
         document.getElementById(trening + 'SM3').innerText = localStorage[trening + 'SM3'];
         if (localStorage[trening + 'SM3'] <= 0) {
             document.getElementById(trening + 'Button3').disabled = true;
             document.getElementById(trening + 'Button3').classList.add('disabled');
-        }else{
+        } else {
             document.getElementById(trening + 'Button3').disabled = false;
             document.getElementById(trening + 'Button3').classList.remove('disabled');
         }
     }
-    if ( typeof localStorage[trening + 'SM4'] === 'undefined') {
-        
-    }else{
+    if (typeof localStorage[trening + 'SM4'] === 'undefined') {
+
+    } else {
         document.getElementById(trening + 'SM4').innerText = localStorage[trening + 'SM4'];
         if (localStorage[trening + 'SM4'] <= 0) {
             document.getElementById(trening + 'Button4').disabled = true;

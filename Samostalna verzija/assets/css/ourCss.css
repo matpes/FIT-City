@@ -175,6 +175,14 @@ footer{
     text-align: center;
 }
 
+#title2{
+    font-weight: 900;
+    font-size:30px !important;
+    color: white;
+    text-align: center;
+}
+
+
 
 .nothing{
     text-decoration: none;
@@ -275,3 +283,44 @@ footer{
     padding: 15px;
 }
 
+.tile5{
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    height: 40px;
+    
+}
+
+.otkaziDugme {
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.otkaziDugme:hover {
+    background-color: #000;
+    color: darkgray;
+    border-radius: 0.5rem;
+}
+
+.tileTreninzi{
+    border: lightgray double 20px;
+    background-color: none;
+}
+
+.rounded-circle-my{
+    border-radius: 50% !important;
+} 
+
+.img-thumbnail-my{
+    padding: .25rem;
+    background-color: darkgray;
+    border: darkgray double 1px;
+    max-width: 100%;
+    height: auto;
+}
+
+.bigMarginLeft{
+    margin-left: 250px;
+}
