@@ -310,6 +310,8 @@ var reserve = (trening, rdBr, time, day) => {
     let time1 = date1.getHours() + ':' + date1.getMinutes();
     if (offset == 0 && time1.localeCompare(time) == 1) {//Zakazuje se trening za danas, Trening je sledece nedelje 
         offset = 7;
+    }else if(offset < 0){
+        offset +=7;
     }
     dateDay1 += offset;
     if (dateDay1 > 30) {
