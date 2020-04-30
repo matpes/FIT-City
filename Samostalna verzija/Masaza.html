@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>FIT CITY Masaza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/ourCss.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="assets/js/provera.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+        <!--
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+           -->
+</head>
+
+<body class="is-preload" id="pozadina" >
+
+
+
+
+
+    <!-- Header -->
+
+    <div class="containter-fluid">
+
+        <div class="containter-fluid">
+
+            <div class="myHeader">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-xl navbar-dark bg-dark"
+                            style="background-color: black !important;">
+                            <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt=""
+                                    class="img-fluid float-left" width="30px" height="30px"> FIT CITY</a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item ">
+                                        <a href="index.html" class="nav-link"> POČETNA
+                                            <span class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown ">
+
+                                        <a class="nav-link dropdown-toggle active" href="index.html" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            USLUGE
+                                        </a>
+                                        <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
+                                            <a class="dropdown-item white bg-dark" href="Nutricionista.html">
+                                                NUTRICIONISTA</a>
+                                            <a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="ZakazivanjeTreninga.html" class="nav-link"> ZAKAZIVANJE TRENINGA
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Moj_Nalog.html" class="nav-link"> MOJ NALOG </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Onama.html" class="nav-link"> O NAMA </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb" style="background-color: black !important;">
+                        <ol class="breadcrumb" style="background-color: black !important;">
+                            <li class="breadcrumb-item"><a href="index.html" class="Previous">Početna</a></li>
+                            <li class="breadcrumb-item"><a href="Treninzi.html">Usluge</a></li>
+                            <li class="breadcrumb-item active current" aria-current="page">Masaže</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <!--  Body  -->
+
+
+            <div class="row text-center" style="margin-top: 15px;">
+                <div class="col-12 title">
+                    <p id="title">
+                        MASAŽE
+                    </p>
+                    <!-- Ovde možete videti pregled svih grupa treninga koji se održavaju u našim teretanama -->
+                </div>
+            </div>
+
+            <br>
+
+
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="padding tile description">
+                                <form action="">
+                                    <table class="description table table-borderless black">
+                                        <tr>
+                                            <th colspan="2" class="description text-center nutricionista" id="staGod">
+                                                NEOPHODNI PODACI
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td class="description float-right" style="max-width: 40%;">
+                                                <label for="ime" id="ima2">
+                                                    Ime:
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control inputNut" id="ime">
+                                                <span class="napomena" id="imeNapomena"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="description float-right">
+                                                <label for="prezime">
+                                                    Prezime:
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control inputNut" id="prezime">
+                                                <span class="napomena" id="prezimeNapomena"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="description float-right">
+                                                <label for="mail">
+                                                    Mail:
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="email" class="form-control inputNut" id="mail">
+                                                <span class="napomena" id="mailNapomena"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="description float-right">
+                                                <label for="telefon">
+                                                    Telefon:
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control inputNut" id="telefon">
+                                                <span class="napomena" id="telefonNapomena"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="description float-right">
+                                                <label for="datum">
+                                                    Datum:
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="date" class="form-control inputNut" id="datum">
+                                                <span class="napomena" id="datumNapomena"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="description float-right">
+                                                <label for="opis">
+                                                    Kratak opis:
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control inputNut" id="opis" rows="3"></textarea>
+                                                <span class="napomena" id="opisNapomena"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="text-center">
+                                                <button type="button" class="btn btn-dark btn-lg inputNut"
+                                                    id="posaljiZahtev" >
+                                                    Posalji zahtev
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="text-center">
+                                                <button type="button" class="btn btn-dark btn-lg inputNut"
+                                                    id="exportPDF2">
+                                                    PDF
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 description">
+                            <div class="padding tile description text-justify">
+                                <p colspan="2" class="description nutricionista text-center">
+                                    Masaža
+                                </p>
+                                <p class="black">
+                                    Sportska masaža je vrsta masaže u kojoj se upotrebljavaju specijalni zahvati koji imaju za cilj 
+                                    bržu i potpuniju pripremu sportiste za treninge, intenziviranje i produžavanje vremena samog treninga i povećanja sportske moći. 
+                                    Masaža omogućava i brže i potpunije odstranjivanje svih nepoželjnih ili štetnih posledica zbog pojačane fizičke aktivnosti. 
+                                    Masaža je indikovana kao neophodna kod svih sportova i svih sportista. 
+                                </p>
+                            </div>
+                            <br>
+                            <div class="padding tile">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="images/ONama/maser.jpg" alt="" class="">
+                                        </td>
+                                        <td class="description">
+                                            <p class="description maliPadding black">
+                                                <b> IKEA </b> je jedna od naših najboljih maserki. 
+                                                Svoje znanje je stekla u Švedskoj, gde je i odrasla,
+                                                ali je zbog prelepog posla koji je pronašla u Srbiji odlučila da tu i ostane.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-1">
+
+                </div>
+
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Footer -->
+            <div class="row">
+                <div class="col-12">
+                    <footer class="text-center footer alert">
+
+
+                        <div class="copyright">
+
+                            &copy; 2020, Jovana Jelčić, Matija Pešić, Odsek za softversko inženjerstvo Elektrotehničkog
+                            fakulteta
+                            Univerziteta u Beogradu
+                        </div>
+
+                    </footer>
+                </div>
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>FIT CITY O Nama</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/ourCss.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/provera.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <!--
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+-->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN6suCDTG-TBGek2DKN7Dus_Zr5ahPGmw&callback=initMap"> </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body class="is-preload" id="pozadina">
+
+
+    <script>
+        /*$(document).ready(function () {
+            var platform = new H.service.Platform({
+                'apikey': '{s1_p0Xk2oVfsOmYEPXUlCZJmBUgyL9DSwQnR1LmU2cM}'
+            });
+
+            // Obtain the default map types from the platform object:
+            var defaultLayers = platform.createDefaultLayers();
+
+            // Instantiate (and display) a map object:
+            var map = new H.Map(
+                document.getElementById('mapContainer'),
+                defaultLayers.vector.normal.map,
+                {
+                    zoom: 10,
+                    center: { lng: 13.4, lat: 52.5 }
+                });
+
+            var ui = H.ui.UI.createDefault(map, defaultLayers);
+            //ui.getControl('zoom').setEnabled(false);
+        });*/
+    </script>
+
+
+
+    <!-- Header -->
+
+    <div class="containter-fluid">
+
+        <div class="containter-fluid">
+
+            <div class="myHeader">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-xl navbar-dark bg-dark"
+                            style="background-color: black !important;">
+                            <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt=""
+                                    class="img-fluid float-left" width="30px" height="30px"> FIT CITY</a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item ">
+                                        <a href="index.html" class="nav-link"> POČETNA
+                                            <span class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown ">
+
+                                        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            USLUGE
+                                        </a>
+                                        <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
+                                            <a class="dropdown-item white bg-dark" href="Nutricionista.html">
+                                                NUTRICIONISTA</a>
+                                            <a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="ZakazivanjeTreninga.html" class="nav-link"> ZAKAZIVANJE TRENINGA
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Moj_Nalog.html" class="nav-link"> MOJ NALOG </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Onama.html" class="nav-link active"> O NAMA </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb" style="background-color: black !important;">
+                        <ol class="breadcrumb" style="background-color: black !important;">
+                            <li class="breadcrumb-item"><a href="index.html" class="Previous">Početna</a></li>
+                            <li class="breadcrumb-item"><a href="Treninzi.html">Usluge</a></li>
+                            <li class="breadcrumb-item active current" aria-current="page">Masaže</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <!--  Body  -->
+
+
+            <div class="row text-center" style="margin-top: 15px;">
+                <div class="col-12 title">
+                    <p id="title">
+                        FIT CITY
+                    </p>
+                    <!-- Ovde možete videti pregled svih grupa treninga koji se održavaju u našim teretanama -->
+                </div>
+            </div>
+
+            <br>
+
+
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-12 ONama">
+                            <p>
+                                FIT CITY je specijalista u gradu za grupne fitnes programe sa više od 200 fitnes časova
+                                mesečno i 12 različitih vrsta programa. Od Les Mills programa do yoge, pilatesa,
+                                cardio...
+                                <br>
+
+                                FIT CITY fitnes klub je kreiran tako da svojim članovima pruži osećaj i prednosti
+                                sporta.
+                                <br>
+
+
+
+                                Naša filozofija je bazirana na humanističkim i sportskim vrednostima a naša ekipa
+                                profesionalaca je uvek spremna da vas dočeka, sasluša i pruži podršku. To je ekipa uz
+                                koju ćete se i zabaviti i dobiti željene rezultate.
+                                <br>
+
+                                Uz prvoklasnu opremu, efikasne fitnes programe, društvenu atmosferu i instruktore koji
+                                su inspirisani fitnesom i orijentisani da vam pruže sportski osećaj, bićete podstaknuti
+                                da dostignete željenu fizičku formu.
+                                <br>
+
+                                Mi jesmo specijalisti za grupne fitnes programe, ali pored toga održavamo i nezaboravne
+                                žurke i fitness događaje!
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-12 title">
+                            <p id="title">
+                                NAŠ TIM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-12 title">
+                            <p id="title2">
+                                TRENERI
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <figure>
+                                <div class="ONama">
+                                    <img src="images/ONama/Trener2.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        MARKO ŽIVANOVIĆ
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <figure>
+                                <div class="ONama">
+
+                                    <img src="images/ONama/Trener1.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        JOVANA ĐINOVIĆ
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 offset-sm-3 col-sm-6 offset-md-3 col-md-6 offset-lg-0 col-lg-4">
+                            <figure>
+                                <div class="ONama">
+
+                                    <img src="images/ONama/Trener3.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        DAMJAN LUKIĆ
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-12 title">
+                            <p id="title2">
+                                NUTRICIONISTA
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <!--
+                        <div class="col-xs-12 col-sm-6 col-md-6 offset-lg-2 col-lg-4">
+                            <figure>
+                            <div class="ONama">
+
+                                <img src="images/ONama/nutricionista2.jpg" alt="" class="img-fluid"><div class="overlay">                                       
+                                    OBREY PLAZA                                      
+                                </div>
+                             </div>
+                            </figure>
+                        </div>
+                        -->
+                        <div class="col-xs-12 offset-sm-3 col-sm-6 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+                            <figure>
+                                <div class="ONama">
+                                    <img src="images/ONama/dvd2.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        DAVID PEŠIĆ
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-12 title">
+                            <p id="title2">
+                                MASERI
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="ONama">
+                                <img src="images/ONama/phoebe1.jfif" alt="" class="img-fluid">
+                                <div class="overlay">
+                                    IKEA
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="ONama">
+
+                                <img src="images/ONama/phoebe2.jfif" alt="" class="img-fluid">
+                                <div class="overlay">
+                                    PHOEBE BUFFAY
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 offset-sm-3 col-sm-6 offset-md-3 col-md-6 offset-lg-0 col-lg-4">
+                            <div class="ONama">
+
+                                <img src="images/ONama/phoebe3.png" alt="" class="img-fluid">
+                                <div class="overlay">
+                                    REGINA PHALANGE
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-12 title">
+                            <p id="title">
+                                NAGRADE
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 ONama">
+                            <p>
+                                Nagrada za najbolji objekat 2020.
+                            </p>
+                            <hr>
+                            <p>
+                                Nagrada za najomiljeniji objekat damama 2020.
+                            </p>
+                            <hr>
+                            <p>
+                                Najbolji izbor po mišljenju studenata
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-12 title">
+                            <p id="title">
+                                LOKACIJA
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-12" id='map'>
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row text-center" style="margin-top: 15px;">
+                        <div class="col-12 title">
+                            <p id="title">
+                                KONTAKT
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 ONama text-center">
+
+                            Za sva pitanja nas možete pozvati na broj 011/027-35-15
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-1">
+
+                </div>
+
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Footer -->
+            <div class="row">
+                <div class="col-12">
+                    <footer class="text-center footer alert">
+
+
+                        <div class="copyright">
+
+                            &copy; 2020, Jovana Jelčić, Matija Pešić, Odsek za softversko inženjerstvo Elektrotehničkog
+                            fakulteta
+                            Univerziteta u Beogradu
+                        </div>
+
+                    </footer>
+                </div>
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>

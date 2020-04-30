@@ -2,7 +2,8 @@ var klasican = {
     naslov: 'klasican',
     tezina: 4.5,
     trajanje: 30,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#klasicanModal">
+    <div class="carousel-item active">
     <img src="images/Pilates/klasicni1.jpg"
         class="d-block w-100 img-fluid circle" alt="home3">
 </div>
@@ -13,7 +14,7 @@ var klasican = {
 <div class="carousel-item">
     <img src="images/Pilates/klasicni3.jpg"
         class="d-block w-100 img-fluid circle" alt="home3">
-</div>`,
+</div></div>`,
     text: `<br>
 
     <h2>
@@ -79,7 +80,8 @@ var stott = {
     naslov: 'stott',
     tezina: 5,
     trajanje: 30,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#stottModal">
+    <div class="carousel-item active">
     <img src="images/Pilates/stott11.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -90,7 +92,7 @@ var stott = {
 <div class="carousel-item">
     <img src="images/Pilates/stott3.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
-</div>`,
+</div></div>`,
     text: `<br>
 
     <h2>
@@ -152,7 +154,8 @@ var reformer = {
     naslov: 'reformer',
     tezina: 3.5,
     trajanje: 30,
-    slike: `<div class="carousel-item">
+    slike: `<div data-toggle="modal" data-target="#reformerModal">
+    <div class="carousel-item">
     <img src="images/Pilates/reformer1.jpg"
         class="d-block w-100 img-fluid circle" alt="home3">
 </div>
@@ -163,7 +166,7 @@ var reformer = {
 <div class="carousel-item active">
     <img src="images/Pilates/reformer3.jpg"
         class="d-block w-100 img-fluid circle" alt="home3">
-</div>`,
+</div></div>`,
     text: `<br>
 
     <h2>
@@ -227,7 +230,8 @@ var cxworx = {
     naslov: 'cxworx',
     tezina: 5,
     trajanje: 30,
-    slike: `<div class="carousel-item ">
+    slike: `<div data-toggle="modal" data-target="#cxworxModal">
+    <div class="carousel-item ">
     <img src="images/Core/cxworx1.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -238,7 +242,7 @@ var cxworx = {
 <div class="carousel-item active">
     <img src="images/Core/cxworx3.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
-</div>`,
+</div></div>`,
     text: `<br>
 
     <h2>
@@ -300,7 +304,8 @@ var bodyweight = {
     naslov: 'bodyweight',
     tezina: 4,
     trajanje: 45,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#bodyweightModal">
+    <div class="carousel-item active">
     <img src="images/Core/body.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -311,7 +316,7 @@ var bodyweight = {
 <div class="carousel-item">
     <img src="images/Core/body3.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
-</div>`,
+</div></div>`,
     text: `<br>
 
     <h2>
@@ -368,7 +373,8 @@ var plank = {
     naslov: 'plank',
     tezina: 4.5,
     trajanje: 20,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#plankModal">
+    <div class="carousel-item active">
     <img src="images/Core/core4.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -379,7 +385,7 @@ var plank = {
 <div class="carousel-item">
     <img src="images/core/core2.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
-</div>`,
+</div></div>`,
     text: ` <br>
 
     <h2>
@@ -440,7 +446,8 @@ var prenatal = {
     naslov: 'prenatalna',
     tezina: 5,
     trajanje: 30,
-    slike: `<div class="carousel-item">
+    slike: `<div data-toggle="modal" data-target="#prenatalModal">
+    <div class="carousel-item">
     <img src="images/yoga/prenatal2.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -451,7 +458,7 @@ var prenatal = {
 <div class="carousel-item active">
     <img src="images/yoga/prenatal4.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
-</div>`,
+</div></div>`,
     text: `<br>
 
     <h2>
@@ -516,7 +523,8 @@ var yin = {
     naslov: 'yin',
     tezina: 3.5,
     trajanje: 30,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#yinModal">
+    <div class="carousel-item active">
     <img src="images/yoga/yin1.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -527,7 +535,7 @@ var yin = {
 <div class="carousel-item">
     <img src="images/yoga/yin3.jpg=w768" class="d-block w-100 img-fluid circle"
         alt="home3">
-</div>`,
+</div></div>`,
     text: `<br>
 
     <h2>
@@ -590,7 +598,8 @@ var bikram = {
     naslov: 'bikram',
     tezina: 4.5,
     trajanje: 35,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#bikramModal">
+    <div class="carousel-item active">
     <img src="images/yoga/birkam1.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -601,7 +610,7 @@ var bikram = {
 <div class="carousel-item">
     <img src="images/yoga/bikram3.jfif" class="d-block w-100 img-fluid circle"
         alt="home3">
-</div>`,
+</div></div>`,
     text: `<br>
 
     <h2>
@@ -666,7 +675,8 @@ var bikram = {
 var bodyCombat = {
     naslov: 'bodyCombat',
     tezina: 5,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#combatModal">
+    <div class="carousel-item active">
                 <img src="images/Cardio/combat.png" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
             </div>
@@ -677,7 +687,8 @@ var bodyCombat = {
             <div class="carousel-item">
                 <img src="images/Cardio/combat3.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
-            </div>`,
+            </div>
+        </div>`,
     text: `<br>
 
     <h2>
@@ -740,7 +751,8 @@ var bodyCombat = {
 var rpm = {
     naslov:'rpm',
     tezina: 4,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#RPMModal">
+    <div class="carousel-item active">
     <img src="images/Cardio/rpm1.png" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -751,7 +763,8 @@ var rpm = {
 <div class="carousel-item">
     <img src="images/Cardio/rpm3.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
-</div>`,
+</div>
+</div`,
     text: `<br>
     <br>
 
@@ -813,7 +826,8 @@ var bodyStep = {
     naslov: 'bodyStep',
     tezina: 3.5,
     trajanje: 45,
-    slike: `<div class="carousel-item active">
+    slike: `<div data-toggle="modal" data-target="#stepModal">
+    <div class="carousel-item active">
     <img src="images/Cardio/step4.png" class="d-block w-100 img-fluid circle"
         alt="home3">
 </div>
@@ -824,6 +838,7 @@ var bodyStep = {
 <div class="carousel-item">
     <img src="images/Cardio/step3.jpg" class="d-block w-100 img-fluid circle"
         alt="home3">
+</div>
 </div>`,
 text: `<br>
 

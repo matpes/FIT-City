@@ -304,6 +304,7 @@ footer{
     border-radius: 0.5rem;
 }
 
+
 .tileTreninzi{
     border: lightgray double 20px;
     background-color: none;
@@ -327,6 +328,97 @@ footer{
 
 
 .napomena{
-    color: red !important;
+    color: rgb(196, 0, 0) !important;
     font-size: 16px !important;
 }
+
+.nutricionista{
+    color: black;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.inputNut {
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.inputNut:focus {
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.black{
+    color: black;
+}
+
+
+.ONama{
+    font-size: 25px;
+    text-align: justify;
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(0,0,0,0.6);
+    border: lightgray double 20px;
+}
+
+.ONama .overlay {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    position: absolute;
+    bottom: 7.6%;
+    height: 20%;
+    transition: .5s ease;
+    font-size: 20px;
+    padding: 20px;
+    width: 79%;
+    opacity: 0;
+    text-align: center;
+  }
+
+  .ONama:hover .overlay
+{
+ opacity: 1;
+}
+
+
+hr{
+    border: lightgray solid 2pt;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+   }
+
+.naslovna {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    position: absolute;
+    bottom: 7.6%;
+    height: 20%;
+    transition: .5s ease;
+    font-size: 20px;
+    padding: 20px;
+    width: 79%;
+    opacity: 0;
+    text-align: center;
+}
+
+.strelicaLevo{
+    align-items: center !important;
+    width: 5% !important;
+}
+.strelicaDesno{
+    align-items: center !important;
+    width: 5% !important;
+}
+
+

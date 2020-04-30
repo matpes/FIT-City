@@ -27,10 +27,11 @@
     <script src="assets/js/ourJs.js"></script>
     <script src="assets/js/sortByLength.js"></script>
     <script src="assets/js/zakazaniTreninzi.js"></script>
-    
+
 </head>
 
-<body class="is-preload" id="pozadina" onload="init(); loadMark('cardioCom1Mark'); loadMark('cardioCom2Mark'); loadMark('cardioCom3Mark')">
+<body class="is-preload" id="pozadina"
+    onload="init(); loadMark('cardioCom1Mark'); loadMark('cardioCom2Mark'); loadMark('cardioCom3Mark')">
 
 
 
@@ -68,7 +69,8 @@
                                     </a>
                                     <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
-                                        <a class="dropdown-item white bg-dark" href="Nutricionista.html"> NUTRICIONISTA</a>
+                                        <a class="dropdown-item white bg-dark" href="Nutricionista.html">
+                                            NUTRICIONISTA</a>
                                         <a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
                                     </div>
                                 </li>
@@ -88,7 +90,7 @@
                 </div>
             </div>
         </div>
-        
+
         <br>
         <br>
 
@@ -116,10 +118,10 @@
         </div>
         <div class="row text-center" style="margin-top: 15px;">
             <div class="col-1 title">
-                
+
             </div>
             <div class="col-10 title ">
-                <p >
+                <p>
                     <i>
                         <a href="#" onclick="sortByName('cardio')" class="link">Sortirano po imenu</a>
                         /
@@ -130,7 +132,7 @@
                 </p>
             </div>
             <div class="col-1 title">
-                
+
             </div>
         </div>
         <br>
@@ -148,22 +150,22 @@
                             <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
                                 <br>
                                 <br>
-                                <div class="carousel slide carousel-fade"
-                                    data-ride="carousel">
-                                    <div class="carousel-inner padding" id="cardioSlike1" >
-                                        <div class="carousel-item active">
-                                            <img src="images/Cardio/combat.png" class="d-block w-100 img-fluid circle"
-                                                alt="home3">
+                                <div class="carousel slide carousel-fade" data-ride="carousel">
+                                    <div class="carousel-inner padding" id="cardioSlike1">
+                                        <div data-toggle="modal" data-target="#combatModal">
+                                            <div class="carousel-item active">
+                                                <img src="images/Cardio/combat.png"
+                                                    class="d-block w-100 img-fluid circle" alt="home3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/Cardio/combat2.jpg"
+                                                    class="d-block w-100 img-fluid circle" alt="home3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/Cardio/combat3.jpg"
+                                                    class="d-block w-100 img-fluid circle" alt="home3">
+                                            </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="images/Cardio/combat2.jpg" class="d-block w-100 img-fluid circle"
-                                                alt="home3">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/Cardio/combat3.jpg" class="d-block w-100 img-fluid circle"
-                                                alt="home3">
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -175,10 +177,13 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b> Body Combat </b> je energičan trening koji kombinuje pokrete više borilačkih veština, koji će vam pomoći da budete fit, brzi i snažni. 
-                                    Nakon treninga Body Combata osećate se osnaženo i moćno.Body Combat koristi elemente karatea, tekvondoa, boksa, muai taia, kapoere i kung fua. 
-                                    Ali ne brinite, ne treba vam nikakvo iskustvo borilačkih veština – tokom zagrevanja instruktori će vam pokazati sve pokrete. Jačaćete kroz razne kikove, 
-                                    aperkate i krošee. 
+                                    <b> Body Combat </b> je energičan trening koji kombinuje pokrete više borilačkih
+                                    veština, koji će vam pomoći da budete fit, brzi i snažni.
+                                    Nakon treninga Body Combata osećate se osnaženo i moćno.Body Combat koristi
+                                    elemente karatea, tekvondoa, boksa, muai taia, kapoere i kung fua.
+                                    Ali ne brinite, ne treba vam nikakvo iskustvo borilačkih veština – tokom zagrevanja
+                                    instruktori će vam pokazati sve pokrete. Jačaćete kroz razne kikove,
+                                    aperkate i krošee.
                                     Takođe se rade vežbe poput iskoraka, čučnjeva i sklekova.
                                     <br>
                                     Treninzi traju 55 minuta.
@@ -223,9 +228,9 @@
                                         </div>
                                         <div class="col-12 form-group">
                                             <span id=ocenaFailcardioCom1>
-                                                                           
-                                           </span>
-                                   </div>
+
+                                            </span>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -250,11 +255,16 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>RPM </b> je fantastični, pažljivo osmišljeni trening na biciklima, takav koji će vas zadovoljiti na nekoliko nivoa
-                                     – sagoreće brdo kalorija, napraviće od vas fitnes mašine i pri tom će vam stalno iznova i iznova podizati raspoloženje!
-                                    RPM je trening na biciklovima koji se dešava uz najmoćniju muziku koju možete zamisliti. 
-                                    Zahvaljujući treneru koji podstiče i inspiriše, konstantno imate utisak da vozite planinama, brdima i kroz šume. 
-                                    Otkrijte sportistu u sebi – izgorite kako biste podigli endorfin do neslućenih granica. 
+                                    <b>RPM </b> je fantastični, pažljivo osmišljeni trening na biciklima, takav koji će
+                                    vas zadovoljiti na nekoliko nivoa
+                                    – sagoreće brdo kalorija, napraviće od vas fitnes mašine i pri tom će vam stalno
+                                    iznova i iznova podizati raspoloženje!
+                                    RPM je trening na biciklovima koji se dešava uz najmoćniju muziku koju možete
+                                    zamisliti.
+                                    Zahvaljujući treneru koji podstiče i inspiriše, konstantno imate utisak da vozite
+                                    planinama, brdima i kroz šume.
+                                    Otkrijte sportistu u sebi – izgorite kako biste podigli endorfin do neslućenih
+                                    granica.
                                     <br>
                                     Treninzi traju 30 minuta.
 
@@ -291,19 +301,20 @@
                                         </div>
                                         <div class="col-12 form-group">
                                             <span id=ocenaFailcardioCom2>
-                                                                           
-                                           </span>
-                                   </div>
+
+                                            </span>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12" >
+                            <div class=" col-lg-4 col-md-5 col-sm-12 col-xs-12">
                                 <br>
                                 <br>
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
-                                    
+
                                     <div class="carousel-inner padding" id="cardioSlike2">
+                                        <div data-toggle="modal" data-target="#RPMModal">
                                         <div class="carousel-item active">
                                             <img src="images/Cardio/rpm1.png" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -316,7 +327,7 @@
                                             <img src="images/Cardio/rpm3.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
                                         </div>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -337,6 +348,7 @@
                                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
                                     data-ride="carousel">
                                     <div class="carousel-inner padding" id="cardioSlike3">
+                                        <div data-toggle="modal" data-target="#stepModal">
                                         <div class="carousel-item active">
                                             <img src="images/Cardio/step4.png" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
@@ -349,11 +361,11 @@
                                             <img src="images/Cardio/step3.jpg" class="d-block w-100 img-fluid circle"
                                                 alt="home3">
                                         </div>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12" id="cardioText3" >
+                            <div class="col-lg-8 col-md-7 col-sm-12" id="cardioText3">
                                 <br>
 
                                 <h2>
@@ -361,12 +373,16 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Body step</b> je energični trening sa steperom koji čini da se osećate slobodnim tokom treninga.  
-                                    Ako saberemo podesive stepere, jednostavne korake (preko ili oko stepera) sa sjajnom muzikom koju svi pevaju 
-                                    i dostpunim instruktorom, koga ćete lako pratiti, imaćete sjajan trening. 
-                                    Kardio blokovi će probuditi vaš sistem za sagorevanje kalorija i ubaciti ga u sledeću brzinu, 
+                                    <b>Body step</b> je energični trening sa steperom koji čini da se osećate slobodnim
+                                    tokom treninga.
+                                    Ako saberemo podesive stepere, jednostavne korake (preko ili oko stepera) sa sjajnom
+                                    muzikom koju svi pevaju
+                                    i dostpunim instruktorom, koga ćete lako pratiti, imaćete sjajan trening.
+                                    Kardio blokovi će probuditi vaš sistem za sagorevanje kalorija i ubaciti ga u
+                                    sledeću brzinu,
                                     sve to praćeno kondicionim pesmama koje će oblikovati vaše telo.
-                                    Za sve one koji bi želeli da pojačaju intezitet treninga i ostvare fenomenalne rezultate – 
+                                    Za sve one koji bi želeli da pojačaju intezitet treninga i ostvare fenomenalne
+                                    rezultate –
                                     kružni funkcionalni trening Body step je idealan izbor.
                                     <br>
                                     Treninzi traju 45 minuta.
@@ -405,9 +421,9 @@
                                         </div>
                                         <div class="col-12 form-group">
                                             <span id=ocenaFailcardioCom3>
-                                                                           
-                                           </span>
-                                   </div>
+
+                                            </span>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -426,6 +442,279 @@
             </div>
         </div>
         <br><br>
+
+
+
+        <!-- ==================================================== BODY COMBAT MODAL ============================================== -->
+        <!-- ==================================================== BODY COMBAT MODAL ============================================== -->
+        <!-- ==================================================== BODY COMBAT MODAL ============================================== -->
+        <!-- ==================================================== BODY COMBAT MODAL ============================================== -->
+        <!-- ==================================================== BODY COMBAT MODAL ============================================== -->
+        <!-- ==================================================== BODY COMBAT MODAL ============================================== -->
+        <!-- ==================================================== BODY COMBAT MODAL ============================================== -->
+        <!-- ==================================================== BODY COMBAT MODAL ============================================== -->
+        <div class="modal fade" id="combatModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-example-genericCaptain" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#carousel-example-genericCaptain" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#carousel-example-genericCaptain" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-genericCaptain" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-genericCaptain" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-genericCaptain" data-slide-to="4"></li>
+                            </ul>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid" src="images/Cardio/combat.png"
+                                        style="height:auto; width:auto;" alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/Cardio/combat2.jpg" style="height:auto; width:auto;"
+                                        alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/Cardio/combat3.jpg" style="height:auto; width:auto;"
+                                        alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/rvESuvucByo?list=PLCzr8bZECkgBY0Zuv9AjMltDA8BBfbg37" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/xbABGepKT2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="carousel-control-prev" href="#carousel-example-genericCaptain" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-genericCaptain" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ==================================================== RPM MODAL ============================================== -->
+        <!-- ==================================================== RPM MODAL ============================================== -->
+        <!-- ==================================================== RPM MODAL ============================================== -->
+        <!-- ==================================================== RPM MODAL ============================================== -->
+        <!-- ==================================================== RPM MODAL ============================================== -->
+        <!-- ==================================================== RPM MODAL ============================================== -->
+        <!-- ==================================================== RPM MODAL ============================================== -->
+        <!-- ==================================================== RPM MODAL ============================================== -->
+
+
+        <div class="modal fade" id="RPMModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-example-genericCaptain2" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#carousel-example-genericCaptain2" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#carousel-example-genericCaptain2" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-genericCaptain2" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-genericCaptain2" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-genericCaptain2" data-slide-to="4"></li>
+                            </ul>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid" src="images/Cardio/rpm1.png"
+                                        style="height:auto; width:auto;" alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/Cardio/rpm2.jpg" style="height:auto; width:auto;"
+                                        alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/Cardio/rpm3.jpg" style="height:auto; width:auto;"
+                                        alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/Z_kcl6FslgI?list=PLCzr8bZECkgBY0Zuv9AjMltDA8BBfbg37" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/4Hl1WAGKjMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="carousel-control-prev" href="#carousel-example-genericCaptain2" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-genericCaptain2" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ==================================================== BODY STEP MODAL ============================================== -->
+        <!-- ==================================================== BODY STEP MODAL ============================================== -->
+        <!-- ==================================================== BODY STEP MODAL ============================================== -->
+        <!-- ==================================================== BODY STEP MODAL ============================================== -->
+        <!-- ==================================================== BODY STEP MODAL ============================================== -->
+        <!-- ==================================================== BODY STEP MODAL ============================================== -->
+        <!-- ==================================================== BODY STEP MODAL ============================================== -->
+        <!-- ==================================================== BODY STEP MODAL ============================================== -->
+
+
+        <div class="modal fade" id="stepModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-example-genericCaptain3" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#carousel-example-genericCaptain3" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#carousel-example-genericCaptain3" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-genericCaptain3" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-genericCaptain3" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-genericCaptain3" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-genericCaptain3" data-slide-to="5"></li>
+                            </ul>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid" src="images/Cardio/step4.png"
+                                        style="height:auto; width:auto;" alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/Cardio/step2.webp" style="height:auto; width:auto;"
+                                        alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/Cardio/step3.jpg" style="height:auto; width:auto;"
+                                        alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/Cardio/step1.jpg" style="height:auto; width:auto;"
+                                        alt="...">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/MPutMrW-_fA?list=PLCzr8bZECkgBY0Zuv9AjMltDA8BBfbg37" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/bTslIseTsiU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="carousel-control-prev" href="#carousel-example-genericCaptain3" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-genericCaptain3" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!-- Footer -->

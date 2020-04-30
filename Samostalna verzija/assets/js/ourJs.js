@@ -84,7 +84,7 @@ var initPoseceni = () => {
 
     if (!(typeof sessionStorage.mojiTreninzi !== 'undefined')) {
         mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Ponedeljak', new Date('4/27/2020'), 1));
-        mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Sreda', new Date('4/22/2020'), 2));
+        mojiTreninzi.push(new MojTrening('pilatesZak', '10:00', 'Petak', new Date('4/24/2020'), 2));
         mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Petak', new Date('4/24/2020'), 3));
         mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Nedelja', new Date('4/26/2020'), 4));
         mojiTreninzi.push(new MojTrening('combatZak', '19:00', 'Ponedeljak', new Date('4/20/2020'), 1));
@@ -156,7 +156,7 @@ var setKom = id => {
             localStorage.comments = JSON.stringify(comments);
             displayComents(id);
         }
-    }else{
+    } else {
         $(`#komentar${id}`).addClass('napomena');
         $(`#komentar${id}`).val('Ne mozete komentarisati jer niste posetili ovaj trening.');
         //alert("Niste nikada posetili ovaj trening!");
@@ -214,10 +214,10 @@ var storeMark = id => {
         localStorage[`${id}Mark`] = currMark;
         localStorage[`${id}`] = false;
         hide(id);
-    }else{
+    } else {
         $(`#ocenaFail${id}`).show();
         $(`#ocenaFail${id}`).addClass('napomena');
-        $(`#ocenaFail${id}`).text('Ne mozete oceniti trening ga niste posetili nijednom.');
+        $(`#ocenaFail${id}`).text('Ne mozete oceniti trening jer ga niste posetili nijednom.');
     }
 }
 
@@ -306,17 +306,95 @@ var reload = trening => {
 }
 
 
+var matcher = {
+    pilatesCom1: 'pilatesZak',
+    pilatesCom2: 'stottZak',
+    pilatesCom3: 'reformerZak',
+
+    coreCom1: 'cxworxZak',
+    coreCom2: 'bodyweightZak',
+    coreCom3: 'plankZak',
+
+    yogaCom1: 'birkamZak',
+    yogaCom2: 'yinZak',
+    yogaCom3: 'prenatalZak',
+
+    cardioCom1: 'combatZak',
+    cardioCom2: 'RPMZak',
+    cardioCom3: 'stepZak',
+
+}
+
+
 var canPost = naziv => {
     let poseceni = sortTreninge();
-    let regex = /(.*)Com.$/;
-    let praviNaziv = regex.exec(naziv)[1];
+    let praviNaziv = matcher[`${naziv}`];
     //console.log(praviNaziv);
-    praviNaziv+='Zak';
-    let ret = false;
-    for (let i = 0; i < poseceni.length; i++){
-        if(poseceni[i].name == praviNaziv){
+    for (let i = 0; i < poseceni.length; i++) {
+        if (poseceni[i].name == praviNaziv) {
             return true;
         }
     }
     return false;
+}
+
+var nazivi = ['pilatesCom1Mark', 'pilatesCom2Mark', 'pilatesCom3Mark',
+    'cardioCom1Mark', 'cardioCom2Mark', 'cardioCom3Mark',
+    'coreCom1Mark', 'coreCom2Mark', 'coreCom3Mark',
+    'yogaCom1Mark', 'yogaCom2Mark', 'yogaCom3Mark'];
+
+var loadAllMarks = () => {
+    var ocene = [5, 5, 5, 5, 5, 5, 5, 4.5, 3.5, 2.5, 4.5, 5];
+    //console.log(nazivi.length);
+    for (let i = 0; i < nazivi.length; i++) {
+        if (typeof localStorage[nazivi[i]] == 'undefined') {
+            localStorage[nazivi[i]] = ocene[i];
+        }
+    }
+}
+
+var slike = ['Pilates/klasicni222.jpg', 'Pilates/stott11.jpg', 'Pilates/reformer3.jpg',
+    'Cardio/combat.png', 'Cardio/rpm1.png', 'Cardio/step4.png',
+    'Core/cxworx3.jpg', 'Core/body.jpg', 'Core/core4.jpg',
+    'Yoga/birkam1.jpg', 'Core/yin1.jpg', 'Core/prenatal4.jpg'
+
+];
+
+var linkovi = ['<a href="Pilates.html">', '<a href="Pilates.html">', '<a href="Pilates.html">',
+    '<a href="Cardio.html">', '<a href="Cardio.html">', '<a href="Cardio.html">',
+    '<a href="Core.html">', '<a href="Core.html">', '<a href="Core.html">',
+    '<a href="Yoga.html">', '<a href="Yoga.html">', '<a href="Yoga.html">']
+
+
+
+class top3Trening {
+    constructor(naziv, ocena, path, linkic) {
+        this.naziv = naziv;
+        this.ocena = ocena;
+        this.path = path
+        this.link = linkic
+    }
+}
+
+var declareTop3 = () => {
+    var noveOcene = [];
+    for (let i = 0; i < nazivi.length; i++) {
+        noveOcene.push(new top3Trening(nazivi[i], localStorage[nazivi[i]], slike[i], linkovi[i]));
+    }
+    noveOcene.sort((a, b) => {
+        return parseInt(b.ocena) - parseInt(a.ocena);
+    });
+    //console.log(noveOcene);
+    for (let i = 1; i < 4; i++) {
+        document.getElementById('najbolji' + i).innerText = noveOcene[i-1].link;
+        document.getElementById('najbolji' + i).innerText += '<img src="images/' + noveOcene[i - 1].path + '" class="img-fluid">';
+        let regex4 = /^(.*)Mark$/
+        let regex3 = /^(.*)Zak$/
+        let tempNaziv = regex4.exec(noveOcene[i - 1].naziv)[1];
+        tempNaziv = matcher[`${tempNaziv}`];
+        tempNaziv = regex3.exec(tempNaziv)[1];
+        tempNaziv = tempNaziv.toLocaleUpperCase();
+        document.getElementById('najbolji' + i).innerText += '<div class="overlay">' + tempNaziv + '<br> OCENA = ' + noveOcene[i-1].ocena + '</div></a>';
+        document.getElementById('najbolji' + i).innerHTML = document.getElementById('najbolji' + i).innerText
+    }
 }
