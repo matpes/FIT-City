@@ -163,6 +163,21 @@ var setKom = id => {
     }
 }
 
+var setKom_en = id => {
+    if (canPost(id)) {
+        let com = document.getElementById(`komentar${id}`).value;
+        if (com !== '') {
+            comments[`${id}`].push(com);
+            localStorage.comments = JSON.stringify(comments);
+            displayComents_en(id);
+        }
+    } else {
+        $(`#komentar${id}`).addClass('napomena');
+        $(`#komentar${id}`).val('You can not comment on this training, because you have not visited it yet.');
+        //alert("Niste nikada posetili ovaj trening!");
+    }
+}
+
 
 var displayComents = id => {
     insertCom(id);
@@ -172,6 +187,17 @@ var displayComents = id => {
     </ul>
     <input type="button" value="Postavi" id="komentar2" name="kom" class="btn bg-dark btn-pos btn-middle" onclick="setKom('${id}')">\
     <button type="button" class="button btn bg-dark btn-pos btn-middle" onclick="hide('${id}')"> Sakrij </button>`
+
+}
+
+var displayComents_en = id => {
+    insertCom(id);
+    document.getElementById(id).innerHTML += `<textarea name="kom" id="komentar${id}" rows="2" cols="100" class="form-control bg-dark komentar"></textarea>\
+    <br>\
+    </li>
+    </ul>
+    <input type="button" value="Post" id="komentar2" name="kom" class="btn bg-dark btn-pos btn-middle" onclick="setKom_en('${id}')">\
+    <button type="button" class="button btn bg-dark btn-pos btn-middle" onclick="hide('${id}')"> Hide </button>`
 
 }
 
@@ -205,6 +231,25 @@ var mark = id => {
     }
 }
 
+var mark_en = id => {
+    if (localStorage[`${id}`] === 'false') {
+        localStorage[`${id}`] = true;
+        document.getElementById(id).innerHTML = '';
+        document.getElementById(id).innerHTML += `<select class="ocena" id="${id}NewMark">
+    <option class="ocena">1</option>
+    <option class="ocena">2</option>
+    <option class="ocena">3</option>
+    <option class="ocena">4</option>
+    <option class="ocena">5</option>
+    </select>
+    &nbsp;&nbsp;
+    <button type="button" class="button btn bg-dark btn-pos btn-middle" onclick="storeMark_en('${id}')"> Confirm </button>`
+    } else {
+        localStorage[`${id}`] = false;
+        hide(id);
+    }
+}
+
 var storeMark = id => {
     if (canPost(id)) {
         let currMark = parseFloat(document.getElementById(`${id}Mark`).innerText);
@@ -218,6 +263,22 @@ var storeMark = id => {
         $(`#ocenaFail${id}`).show();
         $(`#ocenaFail${id}`).addClass('napomena');
         $(`#ocenaFail${id}`).text('Ne mozete oceniti trening jer ga niste posetili nijednom.');
+    }
+}
+
+var storeMark_en = id => {
+    if (canPost(id)) {
+        let currMark = parseFloat(document.getElementById(`${id}Mark`).innerText);
+        let newMark = parseFloat(document.getElementById(`${id}NewMark`).value);
+        currMark = (currMark + newMark) / 2;
+        document.getElementById(`${id}Mark`).innerText = currMark;
+        localStorage[`${id}Mark`] = currMark;
+        localStorage[`${id}`] = false;
+        hide(id);
+    } else {
+        $(`#ocenaFail${id}`).show();
+        $(`#ocenaFail${id}`).addClass('napomena');
+        $(`#ocenaFail${id}`).text('You can not rate this training because you have not visited it yet.');
     }
 }
 
@@ -398,3 +459,10 @@ var declareTop3 = () => {
         document.getElementById('najbolji' + i).innerHTML = document.getElementById('najbolji' + i).innerText
     }
 }
+
+
+$(document).ready(function(){
+    loadMark('cardioCom1Mark'); 
+    loadMark('cardioCom2Mark'); 
+    loadMark('cardioCom3Mark');
+})

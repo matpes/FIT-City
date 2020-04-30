@@ -18,42 +18,40 @@ var klasican = {
     text: `<br>
 
     <h2>
-        KLASIČNI PILATES
+        CLASICAL PILATES
     </h2>
 
     <p class="description">
-        Pilates je profinjena forma vežbanja koja istovremeno razvija specifičnu mišićnu
-        snagu kao i
-        fleksibilnost mišića i zglobova, cime se postiže optimalna telesna uravnoteženost.
-        Pilates izdužuje i tonizira telo, utiče na elegantnu posturu, oslobađa stresa,
-        doprinosi boljoj
-        samokontroli i većem samopouzdanju. Ovaj program koncentriše se na unutrašnje
-        mišiće-držače
-        koji su važni za održavanje tela u ravnoteži, a od suštinskog su značaja za
-        podržavanje normalnog stanja kičmenog stuba.
-        <br>
-        Treninzi traju 30 minuta.
+    Pilates is a refined form of exercise that simultaneously develops specific muscle strength as well
+    as flexibility of muscles and joints, thereby achieving optimal body balance. 
+   Pilates lengthens and tones the body, influences elegant posture, relieves stress, 
+   contributes to greater self-control and greater self-confidence. 
+   This program concentrates on internal muscle-holders that are important for keeping the body in balance, 
+   and are essential for maintaining the normal condition of the spinal column.
+   <br>
+   Training sessions last 30 minuta.
+</p>
     </p>
     <div class="row">
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Težina: &nbsp;&nbsp; 4.5
+                Difficulty: &nbsp;&nbsp; 4.5
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark btn-pos"
-                onclick=" displayComents('pilatesCom1')">
-                Komentari
+                onclick=" displayComents_en('pilatesCom1')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('pilatesCom1')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('pilatesCom1')">
+                Rate
             </button>
         </div>
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=pilatesCom1Mark> 5</span>
 
             </p>
@@ -100,38 +98,35 @@ var stott = {
     </h2>
 
     <p class="description">
-        Naglasak <b>Stott pilates</b> metode je na očuvanju prirodne krive kičme,
-        stabilizaciji centra tela i ramenog obruča, neutralnom pozicioniranju zglobova i
-        pravilnom disanju.
-        Balansirajući između mišićne snage i fleksibilnosti, stott pilates na siguran način
-        popraviće vaše držanje,
-        smanjiti bolove u leđima i tenzije u mišićima karlice. Ovakvim treningom izgradi
-        ćete telo vitkog mišićnog tonusa,
-        zavidne snage i pokretljivosti a pre svega zdravog duha.
-        <br>
-        Treninzi traju 30 minuta.
+    The emphasis of the <b>Stott pilates</b>  method is on preserving the natural curve of the spine, 
+    stabilizing the center of the body and shoulder girdle, neutral positioning of the joints and proper breathing. 
+    Balancing between muscle strength and flexibility, stott pilates will certainly improve your posture, 
+    reduce back pain and tension in your pelvic muscles. 
+    This kind of training will build a body of lean muscle tone, enviable strength and mobility, and above all a healthy spirit.
+    <br>
+    Training sessions last 30 minuta.
 
     </p>
     <div class="row">
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Težina: &nbsp;&nbsp; 5
+                Difficulty: &nbsp;&nbsp; 5
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark float-left btn-pos"
-                onclick=" displayComents('pilatesCom2')">
-                Komentari
+                onclick=" displayComents_en('pilatesCom2')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('pilatesCom2')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('pilatesCom2')">
+                Rate
             </button>
         </div>
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=pilatesCom2Mark> 5</span>
             </p>
         </div>
@@ -174,39 +169,35 @@ var reformer = {
     </h2>
 
     <p class="description">
-        Sama ideja o reformeru nastala je za vreme I svetskog rata kada je J.Pilates
-        na bolničke krevete konstuisao manje opruge, federe i trake pomoću kojih su se
-        ranjenici
-        koji su tada bili vezani za bolničke krevete brže oporavljali od onih koji su samo
-        mirovali.
-        Prednost vežbanja na reformeru je u simetriji, odnosno jednakom opterećenju leve i
-        desne strane
-        prilikom vežbanja.
-        <br>
-        Treninzi traju 30 minuta.
+    The very idea of a reformer came about during World War I, when J. Pilates constructed smaller springs, fenders, 
+    and straps on hospital beds, which helped the wounded, who were then tied to hospital beds, recover faster than those 
+    who had just rested. 
+    The advantage of the reformer exercise in symmetry, that is equal to the load of the left and right side during exercise.
+    <br>
+    Training sessions last 30 minuta.
     </p>
 
     <div class="row">
         <div class="col-sm-12 col-md-4 description">
             <p class="description text-center">
-                Težina: &nbsp;3.5
+                Difficulty: &nbsp;3.5
             </p>
         </div>
         <div class="col-sm-12 col-md-4 text-center">
             <button type="button" class="btn bg-dark float-left btn-pos"
-                onclick="displayComents('pilatesCom3')">
-                Komentari
+                onclick="displayComents_en('pilatesCom3')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('pilatesCom3')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('pilatesCom3')">
+                Rate
             </button>
         </div>
 
         <div class="description col-sm-12 col-md-4 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=pilatesCom3Mark> 5</span>
             </p>
         </div>
@@ -250,34 +241,34 @@ var cxworx = {
     </h2>
 
     <p class="description">
-        <b>CXWORX</b> fokusiran je na torso i na mišiće koji povezuju gornji i donji deo tela. 
-        Idealan je za zatezanje stomaka i zadnjice, za unapređenje funkcionalne snage, kao i za predupređenje povreda.
-        Sastoji se od tridesetominutnih treninga koji koriste težinu tela, otpornih traka i tegova kako bi zategli i tonirali vaše mišiće.
-        Trake se obmotavaju oko tela na različite načine kako bi dovele do što većeg otpora tela pri izvođenju vežbi.
-        <br>
-        Treninzi traju 30 minuta.
+    <b>CXWORX</b> focuses on the torso and the muscles that connect the upper and lower body. 
+    It is ideal for tightening the abdomen and buttocks, for improving functional strength as well as for preventing injuries. 
+    It consists of thirty-minute workouts that use body weight, resistance straps and weights to tighten and tone your muscles. 
+    The straps are wrapped around the body in various ways to give the body maximum resistance when performing the exercises.
+    <br>
+    Training sessions last 30 minutes.
     </p>
     <div class="row">
 
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Težina: &nbsp;&nbsp; 5
+                Difficulty: &nbsp;&nbsp; 5
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark btn-pos"
-                onclick=" displayComents('coreCom1')">
-                Komentari
+                onclick=" displayComents_en('coreCom1')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom1')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom1')">
+                Rate
             </button>
         </div>
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=coreCom1Mark> 5</span>
 
             </p>
@@ -324,33 +315,35 @@ var bodyweight = {
     </h2>
 
     <p class="description">
-        <b>Bodzweight</b> trening predstavlja razvijanje vašeg tela korišćenjem samo njegove sopstvene težine.
-        Ovi treninzi su veoma dobri, jer se mogu sprovoditi i kod kuće. Nikakva dodatna operma nije potrebna.
-        Ovi treninzi mogu biti kako individualni, tako i grupni. Najčešće vežbe u ovoj grupi su trbušnjaci i leđnjaci.
-        <br>
-        Treninzi obično traju do 45 minuta.
+    <b>Bodyweight</b> training is about developing your body using only its own weight. 
+    These trainings are very good as they can be carried out at home. 
+    No additional equipment is needed. 
+    These trainings can be both individual and group. 
+    The most common exercises in this group are the abdomen and the back.
+    <br>
+    Training sessions last do 45 minutes.
 
     </p>
     <div class="row">
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Težina: &nbsp;&nbsp; 4
+                Difficulty: &nbsp;&nbsp; 4
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark float-left btn-pos"
-                onclick=" displayComents('coreCom2')">
-                Komentari
+                onclick=" displayComents_en('coreCom2')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom2')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom2')">
+                Rate
             </button>
         </div>
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=coreCom2Mark> 4.5</span>
             </p>
         </div>
@@ -393,36 +386,36 @@ var plank = {
     </h2>
 
     <p class="description">
-        <b>Plank</b> je trening koji testira vašu izdržljivost.
-        Svakim treningom pomeramo granice vaše izdržljivosti sve više i više.
-        Tokom ovih treninga trbušni mišići se najviše naprežu, kako bi održavali vaše telo u pravilnom položaju. 
-        Osim obicnog položaja, naslonjeni na laktovima, raširenih nogu, tokom treninga se sprovode različiti pokreti,
-        kako bi ciljali sve mišiče tela.
-        <br>
-        Treninzi traju oko 20 minuta.
+    <b>Plank</b> is a workout that tests your endurance. 
+    With each workout, we push the limits of your endurance more and more. 
+    During these workouts, the abdominal muscles exert the most strain to keep your body in proper position. 
+    In addition to the usual elbow-rested legs with the legs extended, 
+    various movements are performed during training to target all the muscles of the body.
+    <br>
+    Training sessions last 20 minutes.
     </p>
 
     <div class="row">
         <div class="col-sm-12 col-md-3 description">
             <p class="description text-center">
-                Težina: &nbsp;4.5
+                Difficulty: &nbsp;4.5
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark float-left btn-pos"
-                onclick="displayComents('coreCom3')">
-                Komentari
+                onclick="displayComents_en('coreCom3')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom3')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom3')">
+                Rate
             </button>
         </div>
 
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=coreCom3Mark> 3.5</span>
             </p>
         </div>
@@ -466,39 +459,36 @@ var prenatal = {
     </h2>
 
     <p class="description">
-        <b>Prenatalna yoga</b> je savršena aktivnost za trudnice jer pruža psihofizičku
-        pripremu za porođaj,
-        opušta i smiruje telo, uči pravilnom držanju i ono što je možda i najlepše
-        upoznaćete gomilu mama
-        koje dele iste brige kao i vi!
-        Program Prenatal yoge je takav da se prilagođava trimestru u kome se trenutno
-        nalazite,
-        tako da ćete uvek vežbati bezbedno i u granicama svog trenutnog stanja i mogućnosti.
-        <br>
-        Treninzi traju 30 minuta.
+    <b>Prenatal yoga</b> is the perfect activity for pregnant women because it provides psychophysical
+    preparation for childbirth, relaxes and calms the body, teaches proper posture and what is perhaps
+     the most beautiful is meeting a bunch of moms who share the same concerns as you! 
+     The Prenatal Yoga program is adaptable to the trimester you are currently in, so you will always 
+     exercise safely and within the limits of your current condition and ability.
+   <br>
+   Training sessions last 30 minutes.
     </p>
 
     <div class="row">
         <div class="col-sm-12 col-md-4 description">
             <p class="description text-center">
-                Težina: &nbsp;5
+                Difficulty: &nbsp;5
             </p>
         </div>
         <div class="col-sm-12 col-md-4 text-center">
             <button type="button" class="btn bg-dark float-left btn-pos"
-                onclick="displayComents('yogaCom3')">
-                Komentari
+                onclick="displayComents_en('yogaCom3')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom3')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom3')">
+                Rate
             </button>
         </div>
 
         <div class="description col-sm-12 col-md-4 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=yogaCom3Mark> 5</span>
             </p>
         </div>
@@ -543,38 +533,36 @@ var yin = {
     </h2>
 
     <p class="description">
-        <b>Yin yoga</b> se fokusira na vaša duboka vezna tkiva, poput fascija, ligamenata,
-        zglobova i kostiju.
-        Ona je sporija i meditativnija što vam daje prostor da se okrenete prema unutra i
-        regulišete kako vaš um, tako i fizičke senzacije vašeg tela.
-        Budući da držite poza duže vreme nego što je to slučaj sa drugim tradicionalnim
-        vrstama joge,
-        yin ioga vam pomaže da se istegnete i produžite ona retko korišćena tkiva,
-        a istovremeno vas uči kako disati kroz nelagodu i sedeti sa svojim mislima.
-        <br>
-        Treninzi traju 30 minuta.
+    <b>Yin Yoga </b> focuses on your deep connective tissues, such as fascia, ligaments, joints and bones. 
+    It is slower and more meditative giving you space to turn inward and regulate both your mind 
+    and your body's physical sensations. By holding a pose for longer than other traditional types of yoga, 
+    yin yoga helps you stretch and stretch those rarely used tissues while teaching you how to 
+    breathe through the discomfort and sit with your thoughts.
+    <br>
+    Training sessions last 30 minutes.
+
 
     </p>
     <div class="row">
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Težina: &nbsp;&nbsp; 3.5
+                Difficulty: &nbsp;&nbsp; 3.5
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark float-left btn-pos"
-                onclick=" displayComents('yogaCom2')">
-                Komentari
+                onclick=" displayComents_en('yogaCom2')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom2')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom2')">
+                Rate
             </button>
         </div>
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=yogaCom2Mark> 4.5</span>
             </p>
         </div>
@@ -618,36 +606,34 @@ var bikram = {
     </h2>
 
     <p class="description">
-        <b>Bikram yoga</b> je dobila ime po Bikram Čouduriju i sadrži niz postavljenih poza
-        u sobi kao što
-        je sauna - obično podešena na 105 stepeni i 40% vlažnossti.
-        Choudhuri se suočio sa tužbama za seksualno zlostavljanje i uznemiravanje u SAD-u i
-        pobjegao u Meksiko 2017. godine.
-        Mnogi studiji koji su nekada bili Bikram studiji, sada praktikuju vruću jogu, u
-        nastojanju da se razdvoje od osnivača.
-        <br>
-        Treninzi traju 35 minuta.
+    <b>Bikram yoga</b> is named after Bikram Chouduri and contains a number 
+    of set poses in a room such as a sauna - usually set at 105 degrees and 40% humidity. 
+    Choudhuri has faced U.S. sexual assault and harassment lawsuits and fled to Mexico in 2017. 
+    Many studios that used to be Bikram studios are now practicing hot yoga, in an effort to separate themselves from the founders.
+    <br>
+    Training sessions last 35 minutes.
+
     </p>
     <div class="row">
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Težina: &nbsp;&nbsp; 4.5
+                Difficulty: &nbsp;&nbsp; 4.5
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark btn-pos"
-                onclick=" displayComents('yogaCom1')">
-                Komentari
+                onclick=" displayComents_en('yogaCom1')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom1')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom1')">
+                Rate
             </button>
         </div>
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=yogaCom1Mark> 2.5</span>
 
             </p>
@@ -696,35 +682,36 @@ var bodyCombat = {
     </h2>
 
     <p class="description">
-        <b> Body Combat </b> je energičan trening koji kombinuje pokrete više borilačkih veština, koji će vam pomoći da budete fit, brzi i snažni. 
-        Nakon treninga Body Combata osećate se osnaženo i moćno.Body Combat koristi elemente karatea, tekvondoa, boksa, muai taia, kapoere i kung fua. 
-        Ali ne brinite, ne treba vam nikakvo iskustvo borilačkih veština – tokom zagrevanja instruktori će vam pokazati sve pokrete. Jačaćete kroz razne kikove, 
-        aperkate i krošee. 
-        Takođe se rade vežbe poput iskoraka, čučnjeva i sklekova.
-        <br>
-        Treninzi traju 55 minuta.
+    <b> Body Combat </b> is a vigorous workout that combines multiple martial arts movements to help you be fit, 
+    fast and strong. After training Body Combat, you feel empowered and powerful.Body Combat uses the elements of 
+    karate, tequondo, boxing, muai taia, capoeira and kung fu. But don’t worry, you don’t need any martial arts 
+    experience - during warm-ups, instructors will show you all the moves. 
+    You will be strengthened through various kicks, uppercut and crochets. 
+    Exercises such as stepping, squats and push ups are also done.
+    <br>
+    Training sessions last 55 minutes.
     </p>
 
     <div class="row">
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Težina: &nbsp;&nbsp; 5
+                Difficulty: &nbsp;&nbsp; 5
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark btn-pos"
-                onclick=" displayComents('cardioCom1')">
-                Komentari
+                onclick=" displayComents_en('cardioCom1')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom1')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom1')">
+                Rate
             </button>
         </div>
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=cardioCom1Mark> 5</span>
 
             </p>
@@ -749,7 +736,7 @@ var bodyCombat = {
 }
 
 var rpm = {
-    naslov: 'rpm',
+    naslov:'rpm',
     tezina: 4,
     slike: `<div data-toggle="modal" data-target="#RPMModal">
     <div class="carousel-item active">
@@ -773,36 +760,38 @@ var rpm = {
     </h2>
 
     <p class="description">
-        <b>RPM </b> je fantastični, pažljivo osmišljeni trening na biciklima, takav koji će vas zadovoljiti na nekoliko nivoa
-         – sagoreće brdo kalorija, napraviće od vas fitnes mašine i pri tom će vam stalno iznova i iznova podizati raspoloženje!
-        RPM je trening na biciklovima koji se dešava uz najmoćniju muziku koju možete zamisliti. 
-        Zahvaljujući treneru koji podstiče i inspiriše, konstantno imate utisak da vozite planinama, brdima i kroz šume. 
-        Otkrijte sportistu u sebi – izgorite kako biste podigli endorfin do neslućenih granica. 
-        <br>
-        Treninzi traju 30 minuta.
+    <b>RPM </b> is a fantastic, thoughtfully designed workout on bikes, 
+    one that will satisfy you on several levels - it will burn a calorie burn, 
+    will make you a fitness machine, and will keep you in the mood for more and more! 
+    RPM is a cycling training that happens with the most powerful music you can think of. 
+    Thanks to a coach who encourages and inspires, you are constantly under the impression 
+    that you drive through mountains, hills and through forests. 
+    Discover the athlete in you - burn to raise endorphins to unprecedented limits.
+    <br>
+    Training sessions last 30 minutes.
 
     </p>
 
     <div class="row">
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Težina: &nbsp;&nbsp; 4
+                Difficulty: &nbsp;&nbsp; 4
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn bg-dark float-left btn-pos"
-                onclick=" displayComents('cardioCom2')">
-                Komentari
+                onclick=" displayComents_en('cardioCom2')">
+                Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom2')">
-                Oceni
+            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom2')">
+                Rate
             </button>
         </div>
         <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
-                Ocena: &nbsp;&nbsp;
+                Rate: &nbsp;&nbsp;
                 <span id=cardioCom2Mark> 5</span>
             </p>
         </div>
@@ -840,45 +829,45 @@ var bodyStep = {
         alt="home3">
 </div>
 </div>`,
-    text: `<br>
+text: `<br>
 
 <h2>
     BODY STEP
 </h2>
 
 <p class="description">
-    <b>Body step</b> je energični trening sa steperom koji čini da se osećate slobodnim tokom treninga.  
-    Ako saberemo podesive stepere, jednostavne korake (preko ili oko stepera) sa sjajnom muzikom koju svi pevaju 
-    i dostpunim instruktorom, koga ćete lako pratiti, imaćete sjajan trening. 
-    Kardio blokovi će probuditi vaš sistem za sagorevanje kalorija i ubaciti ga u sledeću brzinu, 
-    sve to praćeno kondicionim pesmama koje će oblikovati vaše telo.
-    Za sve one koji bi želeli da pojačaju intezitet treninga i ostvare fenomenalne rezultate – 
-    kružni funkcionalni trening Body step je idealan izbor.
-    <br>
-    Treninzi traju 45 minuta.
+<b>Body step</b> is a vigorous workout with a stepper that makes you feel free during your workout. 
+If you put together adjustable steppers, simple steps (over or around the steppers) with great music 
+that everyone sings and an accomplished instructor who you can easily follow will have a great workout. 
+Cardi O blocks will wake up your calorie burning system and inject it into the next gear, 
+all accompanied by conditioning songs that will shape your body. 
+For anyone who would like to increase their training intensity and achieve phenomenal results - 
+Circular Functional Body Step Training is the ideal choice.
+<br>
+Training sessions last 45 minutes.
 </p>
 
 <div class="row">
     <div class="col-sm-12 col-md-4 description">
         <p class="description text-center">
-            Težina: &nbsp;3.5
+            Difficulty: &nbsp;3.5
         </p>
     </div>
     <div class="col-sm-12 col-md-4 text-center">
         <button type="button" class="btn bg-dark float-left btn-pos"
-            onclick="displayComents('cardioCom3')">
-            Komentari
+            onclick="displayComents_en('cardioCom3')">
+            Comments
         </button>
         &nbsp;
         &nbsp;
-        <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom3')">
-            Oceni
+        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom3')">
+            Rate
         </button>
     </div>
 
     <div class="description col-sm-12 col-md-4 text-center">
         <p class="description text-center">
-            Ocena: &nbsp;&nbsp;
+            Rate: &nbsp;&nbsp;
             <span id=cardioCom3Mark> 5</span>
         </p>
     </div>
@@ -939,23 +928,23 @@ var byDifficulty = (a, b) => {
 var trainingArray;
 
 var initTA = id => {
-    switch (id) {
+    switch(id){
         case 'cardio':
             return [bodyCombat, rpm, bodyStep];
             break;
-
+        
         case 'core':
             return [cxworx, bodyweight, plank];
             break;
         case 'pilates':
             return [klasican, stott, reformer];
             break;
-
+        
         case 'yoga':
             return [bikram, yin, prenatal];
             break;
-        default:
-            return null;
+        default: 
+        return null;
             break;
 
     }
@@ -964,19 +953,18 @@ var initTA = id => {
 var sortByLength = id => {
     //id===cardio
     var trainingArray = initTA(id);
-
+    
     trainingArray.sort(byLength);
 
-    for (let i = 0; i < 3; i++) {
+    for(let i = 0; i < 3; i++){
         let e = i + 1;
         var slike = id + 'Slike' + e;
         var text = id + 'Text' + e;
-        document.getElementById(slike).innerHTML = trainingArray[i].slike;
-        document.getElementById(text).innerHTML = trainingArray[i].text;
+        document.getElementById(slike).innerHTML=trainingArray[i].slike;
+        document.getElementById(text).innerHTML=trainingArray[i].text;
     }
-    
-    loadMark('cardioCom1Mark');
-    loadMark('cardioCom2Mark');
+    loadMark('cardioCom1Mark'); 
+    loadMark('cardioCom2Mark'); 
     loadMark('cardioCom3Mark');
 }
 
@@ -984,19 +972,18 @@ var sortByName = id => {
     //id===cardio
     var trainingArray = initTA(id);
 
-
+    
     trainingArray.sort(byName);
 
-    for (let i = 0; i < 3; i++) {
+    for(let i = 0; i < 3; i++){
         let e = i + 1;
         var slike = id + 'Slike' + e;
         var text = id + 'Text' + e;
-        document.getElementById(slike).innerHTML = trainingArray[i].slike;
-        document.getElementById(text).innerHTML = trainingArray[i].text;
+        document.getElementById(slike).innerHTML=trainingArray[i].slike;
+        document.getElementById(text).innerHTML=trainingArray[i].text;
     }
-    
-    loadMark('cardioCom1Mark');
-    loadMark('cardioCom2Mark');
+    loadMark('cardioCom1Mark'); 
+    loadMark('cardioCom2Mark'); 
     loadMark('cardioCom3Mark');
 }
 
@@ -1004,21 +991,19 @@ var sortByDifficulty = id => {
     //id===cardio
     var trainingArray = initTA(id);
 
-
+    
     trainingArray.sort(byDifficulty);
 
-    for (let i = 0; i < 3; i++) {
+    for(let i = 0; i < 3; i++){
         let e = i + 1;
         var slike = id + 'Slike' + e;
         var text = id + 'Text' + e;
-        document.getElementById(slike).innerHTML = trainingArray[i].slike;
-        document.getElementById(text).innerHTML = trainingArray[i].text;
+        document.getElementById(slike).innerHTML=trainingArray[i].slike;
+        document.getElementById(text).innerHTML=trainingArray[i].text;
     }
-    
-    loadMark('cardioCom1Mark');
-    loadMark('cardioCom2Mark');
+    loadMark('cardioCom1Mark'); 
+    loadMark('cardioCom2Mark'); 
     loadMark('cardioCom3Mark');
-
 }
 
 

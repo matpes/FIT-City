@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>FIT CITY index</title>
+    <title>FIT CITY Core</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="utf-8" />
@@ -25,7 +25,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="assets/js/ourJs.js"></script>
-    <script src="assets/js/sortByLength.js"></script>
+    <script src="assets/js/sort.js"></script>
     <script src="assets/js/zakazaniTreninzi.js"></script>
 </head>
 
@@ -56,38 +56,38 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item ">
-                                    <a href="index.html" class="nav-link"> POČETNA
+                                    <a href="index_en.html" class="nav-link"> HOME
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
-                                <li class="nav-item dropdown active">
-
-                                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        USLUGE
+                                <li class="nav-item dropdown">
+            
+                                    <a class="nav-link dropdown-toggle active" href="index_en.html" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SERVICES
                                     </a>
                                     <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
-                                        <a class="dropdown-item white bg-dark" href="Nutricionista.html">
-                                            NUTRICIONISTA</a>
-                                        <a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
+                                        <a class="dropdown-item white bg-dark" href="Treninzi_en.html">TRAINIGS</a>
+                                        <a class="dropdown-item white bg-dark" href="Nutricionista_en.html">
+                                            NUTRITIONIST</a>
+                                        <a class="dropdown-item white bg-dark" href="Masaza_en.html">MASAGES</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="ZakazivanjeTreninga.html" class="nav-link"> ZAKAZIVANJE TRENINGA </a>
+                                    <a href="ZakazivanjeTreninga_en.html" class="nav-link"> SCHEDULE A TRAIINNG </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Moj_Nalog.html" class="nav-link"> MOJ NALOG </a>
+                                    <a href="Moj_Nalog_en.html" class="nav-link"> MY PROFILE </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Onama.html" class="nav-link"> O NAMA </a>
+                                    <a href="Onama_en.html" class="nav-link"> ABOUT </a>
                                 </li>
-
+            
                             </ul>
                         </div>
                         <div>
-							<a href="Core_en.html">
-								<img src="images/flags/gb.svg" alt="" class="img-fluid" width="40px">
+							<a href="Core.html">
+								<img src="images/flags/rs.svg" alt="" class="img-fluid" width="40px">
 							</a>
 						</div>
                     </nav>
@@ -100,9 +100,9 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb" style="background-color: black !important;">
                     <ol class="breadcrumb" style="background-color: black !important;">
-                        <li class="breadcrumb-item"><a href="index.html" class="Previous">Početna</a></li>
-                        <li class="breadcrumb-item"><a href="Treninzi.html">Usluge</a></li>
-                        <li class="breadcrumb-item"><a href="Treninzi.html">Treninzi</a></li>
+                        <li class="breadcrumb-item"><a href="index_en.html" class="Previous">Home</a></li>
+                        <li class="breadcrumb-item"><a href="Treninzi_en.html">Services</a></li>
+                        <li class="breadcrumb-item"><a href="Treninzi_en.html">Trainings</a></li>
                         <li class="breadcrumb-item active current" aria-current="page">Core</li>
                     </ol>
                 </nav>
@@ -126,11 +126,11 @@
             <div class="col-10 title ">
                 <p>
                     <i>
-                        <a href="#" onclick="sortByName('core')" class="link">Sortirano po imenu</a>
+                        <a href="#" onclick="sortByName('core')" class="link">Sort by name</a>
                         /
-                        <a href="#" onclick="sortByLength('core')">Sortirano po trajanju</a>
+                        <a href="#" onclick="sortByLength('core')">Sort by duration </a>
                         /
-                        <a href="#" onclick="sortByDifficulty('core')">Sortirano po težini</a>
+                        <a href="#" onclick="sortByDifficulty('core')">Sort by difficulty</a>
                     </i>
                 </p>
             </div>
@@ -178,38 +178,34 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>CXWORX</b> fokusiran je na torso i na mišiće koji povezuju gornji i donji deo
-                                    tela.
-                                    Idealan je za zatezanje stomaka i zadnjice, za unapređenje funkcionalne snage, kao i
-                                    za predupređenje povreda.
-                                    Sastoji se od tridesetominutnih treninga koji koriste težinu tela, otpornih traka i
-                                    tegova kako bi zategli i tonirali vaše mišiće.
-                                    Trake se obmotavaju oko tela na različite načine kako bi dovele do što većeg otpora
-                                    tela pri izvođenju vežbi.
+                                    <b>CXWORX</b> focuses on the torso and the muscles that connect the upper and lower body. 
+                                    It is ideal for tightening the abdomen and buttocks, for improving functional strength as well as for preventing injuries. 
+                                    It consists of thirty-minute workouts that use body weight, resistance straps and weights to tighten and tone your muscles. 
+                                    The straps are wrapped around the body in various ways to give the body maximum resistance when performing the exercises.
                                     <br>
-                                    Treninzi traju 30 minuta.
+                                    Training sessions last 30 minutes.
                                 </p>
                                 <div class="row">
 
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 5
+                                            Difficultz: &nbsp;&nbsp; 5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
                                         <button type="button" class="btn bg-dark btn-pos"
-                                            onclick=" displayComents('coreCom1')">
-                                            Komentari
+                                            onclick=" displayComents_en('coreCom1')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom1')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom1')">
+                                            Rate
                                         </button>
                                     </div>
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=coreCom1Mark> 5</span>
 
                                         </p>
@@ -252,36 +248,35 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Bodzweight</b> trening predstavlja razvijanje vašeg tela korišćenjem samo njegove
-                                    sopstvene težine.
-                                    Ovi treninzi su veoma dobri, jer se mogu sprovoditi i kod kuće. Nikakva dodatna
-                                    operma nije potrebna.
-                                    Ovi treninzi mogu biti kako individualni, tako i grupni. Najčešće vežbe u ovoj grupi
-                                    su trbušnjaci i leđnjaci.
+                                    <b>Bodyweight</b> training is about developing your body using only its own weight. 
+                                    These trainings are very good as they can be carried out at home. 
+                                    No additional equipment is needed. 
+                                    These trainings can be both individual and group. 
+                                    The most common exercises in this group are the abdomen and the back.
                                     <br>
-                                    Treninzi obično traju do 45 minuta.
+                                    Training sessions last 45 minutes.
 
                                 </p>
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 4
+                                            Difficultz: &nbsp;&nbsp; 4
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
                                         <button type="button" class="btn bg-dark float-left btn-pos"
-                                            onclick=" displayComents('coreCom2')">
-                                            Komentari
+                                            onclick=" displayComents_en('coreCom2')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom2')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom2')">
+                                            Rate
                                         </button>
                                     </div>
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=coreCom2Mark> 4.5</span>
                                         </p>
                                     </div>
@@ -362,38 +357,36 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Plank</b> je trening koji testira vašu izdržljivost.
-                                    Svakim treningom pomeramo granice vaše izdržljivosti sve više i više.
-                                    Tokom ovih treninga trbušni mišići se najviše naprežu, kako bi održavali vaše telo u
-                                    pravilnom položaju.
-                                    Osim obicnog položaja, naslonjeni na laktovima, raširenih nogu, tokom treninga se
-                                    sprovode različiti pokreti,
-                                    kako bi ciljali sve mišiče tela.
+                                    <b>Plank</b> is a workout that tests your endurance. 
+                                    With each workout, we push the limits of your endurance more and more. 
+                                    During these workouts, the abdominal muscles exert the most strain to keep your body in proper position. 
+                                    In addition to the usual elbow-rested legs with the legs extended, 
+                                    various movements are performed during training to target all the muscles of the body.
                                     <br>
-                                    Treninzi traju oko 20 minuta.
+                                    Training sessions last 20 minutes.
                                 </p>
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-3 description">
                                         <p class="description text-center">
-                                            Težina: &nbsp;4.5
+                                            Difficultz: &nbsp;4.5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
                                         <button type="button" class="btn bg-dark float-left btn-pos"
-                                            onclick="displayComents('coreCom3')">
-                                            Komentari
+                                            onclick="displayComents_en('coreCom3')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom3')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom3')">
+                                            Rate
                                         </button>
                                     </div>
 
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=coreCom3Mark> 3.5</span>
                                         </p>
                                     </div>
@@ -689,9 +682,8 @@
 
                     <div class="copyright">
 
-                        &copy; 2020, Jovana Jelčić, Matija Pešić, Odsek za softversko inženjerstvo Elektrotehničkog
-                        fakulteta
-                        Univerziteta u Beogradu
+                        &copy; 2020, Jovana Jelčić, Matija Pešić, Departement for software engineering,
+							Univerzity of Belgrade
                     </div>
 
                 </footer>

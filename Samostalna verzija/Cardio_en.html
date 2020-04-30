@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>FIT CITY index</title>
+    <title>FIT CITY Cardio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="utf-8" />
@@ -25,7 +25,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="assets/js/ourJs.js"></script>
-    <script src="assets/js/sortByLength.js"></script>
+    <script src="assets/js/sort.js"></script>
     <script src="assets/js/zakazaniTreninzi.js"></script>
 
 </head>
@@ -57,38 +57,38 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item ">
-                                    <a href="index.html" class="nav-link"> POČETNA
+                                    <a href="index_en.html" class="nav-link"> HOME
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
-                                <li class="nav-item dropdown active">
-
-                                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        USLUGE
+                                <li class="nav-item dropdown">
+            
+                                    <a class="nav-link dropdown-toggle active" href="index_en.html" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SERVICES
                                     </a>
                                     <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
-                                        <a class="dropdown-item white bg-dark" href="Nutricionista.html">
-                                            NUTRICIONISTA</a>
-                                        <a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
+                                        <a class="dropdown-item white bg-dark" href="Treninzi_en.html">TRAINIGS</a>
+                                        <a class="dropdown-item white bg-dark" href="Nutricionista_en.html">
+                                            NUTRITIONIST</a>
+                                        <a class="dropdown-item white bg-dark" href="Masaza_en.html">MASAGES</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="ZakazivanjeTreninga.html" class="nav-link"> ZAKAZIVANJE TRENINGA </a>
+                                    <a href="ZakazivanjeTreninga_en.html" class="nav-link"> SCHEDULE A TRAIINNG </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Moj_Nalog.html" class="nav-link"> MOJ NALOG </a>
+                                    <a href="Moj_Nalog_en.html" class="nav-link"> MY PROFILE </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Onama.html" class="nav-link"> O NAMA </a>
+                                    <a href="Onama_en.html" class="nav-link"> ABOUT </a>
                                 </li>
-
+            
                             </ul>
                         </div>
                         <div>
-							<a href="Cardio_en.html">
-								<img src="images/flags/gb.svg" alt="" class="img-fluid" width="40px">
+							<a href="Cardio.html">
+								<img src="images/flags/rs.svg" alt="" class="img-fluid" width="40px">
 							</a>
 						</div>
                     </nav>
@@ -104,9 +104,9 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb" style="background-color: black !important;">
                     <ol class="breadcrumb" style="background-color: black !important;">
-                        <li class="breadcrumb-item"><a href="index.html" class="Previous">Početna</a></li>
-                        <li class="breadcrumb-item"><a href="Treninzi.html">Usluge</a></li>
-                        <li class="breadcrumb-item"><a href="Treninzi.html">Treninzi</a></li>
+                        <li class="breadcrumb-item"><a href="index_en.html" class="Previous">Home</a></li>
+                        <li class="breadcrumb-item"><a href="Treninzi_en.html">Services</a></li>
+                        <li class="breadcrumb-item"><a href="Treninzi_en.html">Trainings</a></li>
                         <li class="breadcrumb-item active current" aria-current="page">Cardi O</li>
                     </ol>
                 </nav>
@@ -128,11 +128,11 @@
             <div class="col-10 title ">
                 <p>
                     <i>
-                        <a href="#" onclick="sortByName('cardio')" class="link">Sortirano po imenu</a>
+                        <a href="#" onclick="sortByName('cardio')" class="link">Sort by name</a>
                         /
-                        <a href="#" onclick="sortByLength('cardio')">Sortirano po trajanju</a>
+                        <a href="#" onclick="sortByLength('cardio')">Sort by duration</a>
                         /
-                        <a href="#" onclick="sortByDifficulty('cardio')">Sortirano po težini</a>
+                        <a href="#" onclick="sortByDifficulty('cardio')">Sort by difficulty</a>
                     </i>
                 </p>
             </div>
@@ -182,42 +182,36 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b> Body Combat </b> je energičan trening koji kombinuje pokrete više borilačkih
-                                    veština, koji će vam pomoći da budete fit, brzi i snažni.
-                                    Nakon treninga Body Combata osećate se osnaženo i moćno.Body Combat koristi
-                                    elemente karatea, tekvondoa, boksa, muai taia, kapoere i kung fua.
-                                    Ali ne brinite, ne treba vam nikakvo iskustvo borilačkih veština – tokom zagrevanja
-                                    instruktori će vam pokazati sve pokrete. Jačaćete kroz razne kikove,
-                                    aperkate i krošee.
-                                    Takođe se rade vežbe poput iskoraka, čučnjeva i sklekova.
+                                    <b> Body Combat </b> is a vigorous workout that combines multiple martial arts movements to help you be fit, 
+                                    fast and strong. After training Body Combat, you feel empowered and powerful.Body Combat uses the elements of 
+                                    karate, tequondo, boxing, muai taia, capoeira and kung fu. But don’t worry, you don’t need any martial arts 
+                                    experience - during warm-ups, instructors will show you all the moves. 
+                                    You will be strengthened through various kicks, uppercut and crochets. 
+                                    Exercises such as stepping, squats and push ups are also done.
                                     <br>
-                                    Treninzi traju 55 minuta.
+                                    Training sessions last 55 minutes.
                                 </p>
-
-                                <!--   BUTTONS    -->
-                                <!--   BUTTONS    -->
-                                <!--   BUTTONS    -->
 
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 5
+                                            Difficulty: &nbsp;&nbsp; 5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
                                         <button type="button" class="btn bg-dark btn-pos"
-                                            onclick=" displayComents('cardioCom1')">
-                                            Komentari
+                                            onclick=" displayComents_en('cardioCom1')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom1')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom1')">
+                                            Rate
                                         </button>
                                     </div>
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=cardioCom1Mark> 5</span>
 
                                         </p>
@@ -260,41 +254,38 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>RPM </b> je fantastični, pažljivo osmišljeni trening na biciklima, takav koji će
-                                    vas zadovoljiti na nekoliko nivoa
-                                    – sagoreće brdo kalorija, napraviće od vas fitnes mašine i pri tom će vam stalno
-                                    iznova i iznova podizati raspoloženje!
-                                    RPM je trening na biciklovima koji se dešava uz najmoćniju muziku koju možete
-                                    zamisliti.
-                                    Zahvaljujući treneru koji podstiče i inspiriše, konstantno imate utisak da vozite
-                                    planinama, brdima i kroz šume.
-                                    Otkrijte sportistu u sebi – izgorite kako biste podigli endorfin do neslućenih
-                                    granica.
+                                    <b>RPM </b> is a fantastic, thoughtfully designed workout on bikes, 
+                                    one that will satisfy you on several levels - it will burn a calorie burn, 
+                                    will make you a fitness machine, and will keep you in the mood for more and more! 
+                                    RPM is a cycling training that happens with the most powerful music you can think of. 
+                                    Thanks to a coach who encourages and inspires, you are constantly under the impression 
+                                    that you drive through mountains, hills and through forests. 
+                                    Discover the athlete in you - burn to raise endorphins to unprecedented limits.
                                     <br>
-                                    Treninzi traju 30 minuta.
+                                    Training sessions last 30 minutes.
 
                                 </p>
 
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 4
+                                            Difficulty: &nbsp;&nbsp; 4
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
                                         <button type="button" class="btn bg-dark float-left btn-pos"
-                                            onclick=" displayComents('cardioCom2')">
-                                            Komentari
+                                            onclick=" displayComents_en('cardioCom2')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom2')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom2')">
+                                            Rate
                                         </button>
                                     </div>
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=cardioCom2Mark> 5</span>
                                         </p>
                                     </div>
@@ -378,42 +369,38 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Body step</b> je energični trening sa steperom koji čini da se osećate slobodnim
-                                    tokom treninga.
-                                    Ako saberemo podesive stepere, jednostavne korake (preko ili oko stepera) sa sjajnom
-                                    muzikom koju svi pevaju
-                                    i dostpunim instruktorom, koga ćete lako pratiti, imaćete sjajan trening.
-                                    Kardio blokovi će probuditi vaš sistem za sagorevanje kalorija i ubaciti ga u
-                                    sledeću brzinu,
-                                    sve to praćeno kondicionim pesmama koje će oblikovati vaše telo.
-                                    Za sve one koji bi želeli da pojačaju intezitet treninga i ostvare fenomenalne
-                                    rezultate –
-                                    kružni funkcionalni trening Body step je idealan izbor.
+                                    <b>Body step</b> is a vigorous workout with a stepper that makes you feel free during your workout. 
+                                    If you put together adjustable steppers, simple steps (over or around the steppers) with great music 
+                                    that everyone sings and an accomplished instructor who you can easily follow will have a great workout. 
+                                    Cardi O blocks will wake up your calorie burning system and inject it into the next gear, 
+                                    all accompanied by conditioning songs that will shape your body. 
+                                    For anyone who would like to increase their training intensity and achieve phenomenal results - 
+                                    Circular Functional Body Step Training is the ideal choice.
                                     <br>
-                                    Treninzi traju 45 minuta.
+                                    Training sessions last 45 minutes.
                                 </p>
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-4 description">
                                         <p class="description text-center">
-                                            Težina: &nbsp;3.5
+                                            Difficulty: &nbsp;3.5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-4 text-center">
                                         <button type="button" class="btn bg-dark float-left btn-pos"
-                                            onclick="displayComents('cardioCom3')">
-                                            Komentari
+                                            onclick="displayComents_en('cardioCom3')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom3')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom3')">
+                                            Rate
                                         </button>
                                     </div>
 
                                     <div class="description col-sm-12 col-md-4 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=cardioCom3Mark> 5</span>
                                         </p>
                                     </div>
@@ -730,9 +717,8 @@
 
                     <div class="copyright">
 
-                        &copy; 2020, Jovana Jelčić, Matija Pešić, Odsek za softversko inženjerstvo Elektrotehničkog
-                        fakulteta
-                        Univerziteta u Beogradu
+                        &copy; 2020, Jovana Jelčić, Matija Pešić, Departement for software engineering,
+							Univerzity of Belgrade
                     </div>
 
                 </footer>

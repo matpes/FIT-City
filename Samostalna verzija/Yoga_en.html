@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>FIT CITY index</title>
+    <title>FIT CITY Yoga</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="utf-8" />
@@ -25,7 +25,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="assets/js/ourJs.js"></script>
-    <script src="assets/js/sortByLength.js"></script>
+    <script src="assets/js/sort.js"></script>
     <script src="assets/js/zakazaniTreninzi.js"></script>
 </head>
 
@@ -55,38 +55,38 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item ">
-                                    <a href="index.html" class="nav-link"> POČETNA
+                                    <a href="index_en.html" class="nav-link"> HOME
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
-                                <li class="nav-item dropdown active">
+                                <li class="nav-item dropdown">
 
-                                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown"
+                                    <a class="nav-link dropdown-toggle active" href="index_en.html" id="navbarDropdown"
                                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        USLUGE
+                                        SERVICES
                                     </a>
                                     <div class="dropdown-menu bg-dark white" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item white bg-dark" href="Treninzi.html">TRENINZI</a>
-                                        <a class="dropdown-item white bg-dark" href="Nutricionista.html">
-                                            NUTRICIONISTA</a>
-                                        <a class="dropdown-item white bg-dark" href="Masaza.html">MASAŽE</a>
+                                        <a class="dropdown-item white bg-dark" href="Treninzi_en.html">TRAINIGS</a>
+                                        <a class="dropdown-item white bg-dark" href="Nutricionista_en.html">
+                                            NUTRITIONIST</a>
+                                        <a class="dropdown-item white bg-dark" href="Masaza_en.html">MASAGES</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="ZakazivanjeTreninga.html" class="nav-link"> ZAKAZIVANJE TRENINGA </a>
+                                    <a href="ZakazivanjeTreninga_en.html" class="nav-link"> SCHEDULE A TRAIINNG </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Moj_Nalog.html" class="nav-link"> MOJ NALOG </a>
+                                    <a href="Moj_Nalog_en.html" class="nav-link"> MY PROFILE </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="Onama.html" class="nav-link"> O NAMA </a>
+                                    <a href="Onama_en.html" class="nav-link"> ABOUT </a>
                                 </li>
 
                             </ul>
                         </div>
                         <div>
-                            <a href="Yoga_en.html">
-                                <img src="images/flags/gb.svg" alt="" class="img-fluid" width="40px">
+                            <a href="Yoga.html">
+                                <img src="images/flags/rs.svg" alt="" class="img-fluid" width="40px">
                             </a>
                         </div>
                     </nav>
@@ -101,9 +101,9 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb" style="background-color: black !important;">
                     <ol class="breadcrumb" style="background-color: black !important; margin-bottom: 0px !important;">
-                        <li class="breadcrumb-item"><a href="index.html" class="Previous">Početna</a></li>
-                        <li class="breadcrumb-item"><a href="Treninzi.html">Usluge</a></li>
-                        <li class="breadcrumb-item"><a href="Treninzi.html">Treninzi</a></li>
+                        <li class="breadcrumb-item"><a href="index_en.html" class="Previous">Home</a></li>
+                        <li class="breadcrumb-item"><a href="Treninzi_en.html">Services</a></li>
+                        <li class="breadcrumb-item"><a href="Treninzi_en.html">Trainings</a></li>
                         <li class="breadcrumb-item active current" aria-current="page">Yoga</li>
                     </ol>
                 </nav>
@@ -125,15 +125,12 @@
                                 style="border: black solid 15px; border-top: 0px;">
                             <div class="carousel-caption d-none d-md-block">
                                 <i>
-                                    <!-- <h5>YOU CANNOT ALWAYS CONTROL WHAT GOES ON OUTSIDE</h5>
-                                <h5>BUT YOU CAN ALWAYS CONTROL WHAT GOES ON INSIDE</h5>
-                                   -->
-                                    <h5>
-                                        NE MOŽETE UVEK KONTROLISATI ŠTA SE DEŠAVA OKO VAS,
+                                    <h5>YOU CANNOT ALWAYS CONTROL WHAT GOES ON OUTSIDE
                                         <br>
-                                        ALI UVEK MOŽETE KONTROLISATI ŠTA SE DEŠAVA U VAMA!
-                                    </h5>
-                                    <p>Neko nekad</p>
+                                        BUT YOU CAN ALWAYS CONTROL WHAT GOES ON INSIDE</h5>
+
+
+                                    <p>Someone sometime</p>
                                 </i>
                             </div>
                         </div>
@@ -160,11 +157,11 @@
             <div class="col-10 title ">
                 <p>
                     <i>
-                        <a href="#" onclick="sortByName('yoga')" class="link">Sortirano po imenu</a>
+                        <a href="#" onclick="sortByName('yoga')" class="link">Sort by name</a>
                         /
-                        <a href="#" onclick="sortByLength('yoga')">Sortirano po trajanju</a>
+                        <a href="#" onclick="sortByLength('yoga')">Sort by duradurationncy</a>
                         /
-                        <a href="#" onclick="sortByDifficulty('yoga')">Sortirano po težini</a>
+                        <a href="#" onclick="sortByDifficulty('yoga')">Sort by difficulty</a>
                     </i>
                 </p>
             </div>
@@ -214,36 +211,33 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Bikram yoga</b> je dobila ime po Bikram Čouduriju i sadrži niz postavljenih poza
-                                    u sobi kao što
-                                    je sauna - obično podešena na 105 stepeni i 40% vlažnossti.
-                                    Choudhuri se suočio sa tužbama za seksualno zlostavljanje i uznemiravanje u SAD-u i
-                                    pobjegao u Meksiko 2017. godine.
-                                    Mnogi studiji koji su nekada bili Bikram studiji, sada praktikuju vruću jogu, u
-                                    nastojanju da se razdvoje od osnivača.
+                                    <b>Bikram yoga</b> is named after Bikram Chouduri and contains a number 
+                                    of set poses in a room such as a sauna - usually set at 105 degrees and 40% humidity. 
+                                    Choudhuri has faced U.S. sexual assault and harassment lawsuits and fled to Mexico in 2017. 
+                                    Many studios that used to be Bikram studios are now practicing hot yoga, in an effort to separate themselves from the founders.
                                     <br>
-                                    Treninzi traju 35 minuta.
+                                    Training sessions last 35 minutes.
                                 </p>
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 4.5
+                                            Difficulty: &nbsp;&nbsp; 4.5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
                                         <button type="button" class="btn bg-dark btn-pos"
-                                            onclick=" displayComents('yogaCom1')">
-                                            Komentari
+                                            onclick=" displayComents_en('yogaCom1')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom1')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom1')">
+                                            Rate
                                         </button>
                                     </div>
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=yogaCom1Mark> 2.5</span>
 
                                         </p>
@@ -286,38 +280,35 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Yin yoga</b> se fokusira na vaša duboka vezna tkiva, poput fascija, ligamenata,
-                                    zglobova i kostiju.
-                                    Ona je sporija i meditativnija što vam daje prostor da se okrenete prema unutra i
-                                    regulišete kako vaš um, tako i fizičke senzacije vašeg tela.
-                                    Budući da držite poza duže vreme nego što je to slučaj sa drugim tradicionalnim
-                                    vrstama joge,
-                                    yin ioga vam pomaže da se istegnete i produžite ona retko korišćena tkiva,
-                                    a istovremeno vas uči kako disati kroz nelagodu i sedeti sa svojim mislima.
+                                    <b>Yin Yoga </b> focuses on your deep connective tissues, such as fascia, ligaments, joints and bones. 
+                                    It is slower and more meditative giving you space to turn inward and regulate both your mind 
+                                    and your body's physical sensations. By holding a pose for longer than other traditional types of yoga, 
+                                    yin yoga helps you stretch and stretch those rarely used tissues while teaching you how to 
+                                    breathe through the discomfort and sit with your thoughts.
                                     <br>
-                                    Treninzi traju 30 minuta.
+                                    Training sessions last 30 minutes.
 
                                 </p>
                                 <div class="row">
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Težina: &nbsp;&nbsp; 3.5
+                                            Difficulty: &nbsp;&nbsp; 3.5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-6 text-center">
                                         <button type="button" class="btn bg-dark float-left btn-pos"
-                                            onclick=" displayComents('yogaCom2')">
-                                            Komentari
+                                            onclick=" displayComents_en('yogaCom2')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom2')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom2')">
+                                            Rate
                                         </button>
                                     </div>
                                     <div class="description col-sm-12 col-md-3 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=yogaCom2Mark> 4.5</span>
                                         </p>
                                     </div>
@@ -404,39 +395,36 @@
                                 </h2>
 
                                 <p class="description">
-                                    <b>Prenatalna yoga</b> je savršena aktivnost za trudnice jer pruža psihofizičku
-                                    pripremu za porođaj,
-                                    opušta i smiruje telo, uči pravilnom držanju i ono što je možda i najlepše
-                                    upoznaćete gomilu mama
-                                    koje dele iste brige kao i vi!
-                                    Program Prenatal yoge je takav da se prilagođava trimestru u kome se trenutno
-                                    nalazite,
-                                    tako da ćete uvek vežbati bezbedno i u granicama svog trenutnog stanja i mogućnosti.
+                                    <b>Prenatal yoga</b> is the perfect activity for pregnant women because it provides psychophysical
+                                     preparation for childbirth, relaxes and calms the body, teaches proper posture and what is perhaps
+                                      the most beautiful is meeting a bunch of moms who share the same concerns as you! 
+                                      The Prenatal Yoga program is adaptable to the trimester you are currently in, so you will always 
+                                      exercise safely and within the limits of your current condition and ability.
                                     <br>
-                                    Treninzi traju 30 minuta.
+                                    Training sessions last 30 minutes.
                                 </p>
 
                                 <div class="row">
                                     <div class="col-sm-12 col-md-4 description">
                                         <p class="description text-center">
-                                            Težina: &nbsp;5
+                                            Difficulty: &nbsp;5
                                         </p>
                                     </div>
                                     <div class="col-sm-12 col-md-4 text-center">
                                         <button type="button" class="btn bg-dark float-left btn-pos"
-                                            onclick="displayComents('yogaCom3')">
-                                            Komentari
+                                            onclick="displayComents_en('yogaCom3')">
+                                            Comments
                                         </button>
                                         &nbsp;
                                         &nbsp;
-                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom3')">
-                                            Oceni
+                                        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom3')">
+                                            Rate
                                         </button>
                                     </div>
 
                                     <div class="description col-sm-12 col-md-4 text-center">
                                         <p class="description text-center">
-                                            Ocena: &nbsp;&nbsp;
+                                            Rate: &nbsp;&nbsp;
                                             <span id=yogaCom3Mark> 5</span>
                                         </p>
                                     </div>
@@ -511,29 +499,35 @@
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img class="img-fluid" src="images/yoga/bikram2.jpg" style="height:auto; width:auto;"
-                                        alt="...">
+                                    <img class="img-fluid" src="images/yoga/bikram2.jpg"
+                                        style="height:auto; width:auto;" alt="...">
                                     <div class="carousel-caption">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-fluid" src="images/yoga/bikram3.jfif" style="height:auto; width:auto;"
-                                        alt="...">
+                                    <img class="img-fluid" src="images/yoga/bikram3.jfif"
+                                        style="height:auto; width:auto;" alt="...">
                                     <div class="carousel-caption">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    
-                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/Ocg3InAEZMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/Ocg3InAEZMU"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                     <div class="carousel-caption">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    
-                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/tQjuoLAjUPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/tQjuoLAjUPc"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                     <div class="carousel-caption">
 
                                     </div>
@@ -596,8 +590,8 @@
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img class="img-fluid" src="images/yoga/yin3.jpg=w768" style="height:auto; width:auto;"
-                                        alt="...">
+                                    <img class="img-fluid" src="images/yoga/yin3.jpg=w768"
+                                        style="height:auto; width:auto;" alt="...">
                                     <div class="carousel-caption">
 
                                     </div>
@@ -610,13 +604,19 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/BsKUBO_TPRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/BsKUBO_TPRk"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                     <div class="carousel-caption">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/mzf2kFNf8Yw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/mzf2kFNf8Yw"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                     <div class="carousel-caption">
 
                                     </div>
@@ -679,27 +679,33 @@
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img class="img-fluid" src="images/yoga/prenatal23.jpg" style="height:auto; width:auto;"
-                                        alt="...">
+                                    <img class="img-fluid" src="images/yoga/prenatal23.jpg"
+                                        style="height:auto; width:auto;" alt="...">
                                     <div class="carousel-caption">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-fluid" src="images/yoga/prenatal3.jpg" style="height:auto; width:auto;"
-                                        alt="...">
+                                    <img class="img-fluid" src="images/yoga/prenatal3.jpg"
+                                        style="height:auto; width:auto;" alt="...">
                                     <div class="carousel-caption">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/A1mn9brmP4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/A1mn9brmP4I"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                     <div class="carousel-caption">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/44fYnoSLL3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="450" height="300" src="https://www.youtube.com/embed/44fYnoSLL3c"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                     <div class="carousel-caption">
 
                                     </div>
@@ -729,9 +735,8 @@
 
                     <div class="copyright">
 
-                        &copy; 2020, Jovana Jelčić, Matija Pešić, Odsek za softversko inženjerstvo Elektrotehničkog
-                        fakulteta
-                        Univerziteta u Beogradu
+                        &copy; 2020, Jovana Jelčić, Matija Pešić, Departement for software engineering,
+							Univerzity of Belgrade
                     </div>
 
                 </footer>
