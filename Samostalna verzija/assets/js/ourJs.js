@@ -112,9 +112,9 @@ var initZak = () => {
         localStorage.pilatesZakSM2 = 1;
         localStorage.pilatesZakSM3 = 0;
 
-        localStorage.stottZakSM1 = 0;
-        localStorage.stottZakSM2 = 0;
-        localStorage.stottZakSM3 = 0;
+        localStorage.stottZakSM1 = 1;
+        localStorage.stottZakSM2 = 1;
+        localStorage.stottZakSM3 = 1;
 
         localStorage.reformerZakSM1 = 2;
         localStorage.reformerZakSM2 = 1;

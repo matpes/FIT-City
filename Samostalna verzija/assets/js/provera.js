@@ -22,6 +22,7 @@ $(document).ready(function () {
             }else{
                 $('#imeNapomena').hide();
             }
+  
         } else {
             can = false;
             $('#imeNapomena').show();
