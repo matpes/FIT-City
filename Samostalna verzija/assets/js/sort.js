@@ -39,13 +39,13 @@ var klasican = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark btn-pos"
+            <button type="button" class="btn bg-dark btn-pos2"
                 onclick=" displayComents_en('pilatesCom1')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('pilatesCom1')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('pilatesCom1')">
                 Rate
             </button>
         </div>
@@ -114,13 +114,13 @@ var stott = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick=" displayComents_en('pilatesCom2')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('pilatesCom2')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('pilatesCom2')">
                 Rate
             </button>
         </div>
@@ -178,24 +178,24 @@ var reformer = {
     </p>
 
     <div class="row">
-        <div class="col-sm-12 col-md-4 description">
+        <div class="col-sm-12 col-md-3 description">
             <p class="description text-center">
                 Difficulty: &nbsp;3.5
             </p>
         </div>
-        <div class="col-sm-12 col-md-4 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+        <div class="col-sm-12 col-md-6 text-center">
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick="displayComents_en('pilatesCom3')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('pilatesCom3')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('pilatesCom3')">
                 Rate
             </button>
         </div>
 
-        <div class="description col-sm-12 col-md-4 text-center">
+        <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
                 Rate: &nbsp;&nbsp;
                 <span id=pilatesCom3Mark> 5</span>
@@ -256,13 +256,13 @@ var cxworx = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark btn-pos"
+            <button type="button" class="btn bg-dark btn-pos2"
                 onclick=" displayComents_en('coreCom1')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom1')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('coreCom1')">
                 Rate
             </button>
         </div>
@@ -331,13 +331,13 @@ var bodyweight = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick=" displayComents_en('coreCom2')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom2')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('coreCom2')">
                 Rate
             </button>
         </div>
@@ -402,13 +402,13 @@ var plank = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick="displayComents_en('coreCom3')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('coreCom3')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('coreCom3')">
                 Rate
             </button>
         </div>
@@ -469,24 +469,24 @@ var prenatal = {
     </p>
 
     <div class="row">
-        <div class="col-sm-12 col-md-4 description">
+        <div class="col-sm-12 col-md-3 description">
             <p class="description text-center">
                 Difficulty: &nbsp;5
             </p>
         </div>
-        <div class="col-sm-12 col-md-4 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+        <div class="col-sm-12 col-md-6 text-center">
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick="displayComents_en('yogaCom3')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom3')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('yogaCom3')">
                 Rate
             </button>
         </div>
 
-        <div class="description col-sm-12 col-md-4 text-center">
+        <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
                 Rate: &nbsp;&nbsp;
                 <span id=yogaCom3Mark> 5</span>
@@ -550,13 +550,13 @@ var yin = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick=" displayComents_en('yogaCom2')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom2')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('yogaCom2')">
                 Rate
             </button>
         </div>
@@ -621,13 +621,13 @@ var bikram = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark btn-pos"
+            <button type="button" class="btn bg-dark btn-pos2"
                 onclick=" displayComents_en('yogaCom1')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('yogaCom1')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('yogaCom1')">
                 Rate
             </button>
         </div>
@@ -699,13 +699,13 @@ var bodyCombat = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark btn-pos"
+            <button type="button" class="btn bg-dark btn-pos2"
                 onclick=" displayComents_en('cardioCom1')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom1')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('cardioCom1')">
                 Rate
             </button>
         </div>
@@ -779,13 +779,13 @@ var rpm = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick=" displayComents_en('cardioCom2')">
                 Comments
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom2')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('cardioCom2')">
                 Rate
             </button>
         </div>
@@ -848,24 +848,24 @@ Training sessions last 45 minutes.
 </p>
 
 <div class="row">
-    <div class="col-sm-12 col-md-4 description">
+    <div class="col-sm-12 col-md-3 description">
         <p class="description text-center">
             Difficulty: &nbsp;3.5
         </p>
     </div>
-    <div class="col-sm-12 col-md-4 text-center">
-        <button type="button" class="btn bg-dark float-left btn-pos"
+    <div class="col-sm-12 col-md-6 text-center">
+        <button type="button" class="btn bg-dark float-left btn-pos2"
             onclick="displayComents_en('cardioCom3')">
             Comments
         </button>
         &nbsp;
         &nbsp;
-        <button type="button" class="btn bg-dark btn-pos" onclick="mark_en('cardioCom3')">
+        <button type="button" class="btn bg-dark btn-pos2" onclick="mark_en('cardioCom3')">
             Rate
         </button>
     </div>
 
-    <div class="description col-sm-12 col-md-4 text-center">
+    <div class="description col-sm-12 col-md-3 text-center">
         <p class="description text-center">
             Rate: &nbsp;&nbsp;
             <span id=cardioCom3Mark> 5</span>

@@ -41,13 +41,13 @@ var klasican = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark btn-pos"
+            <button type="button" class="btn bg-dark btn-pos2"
                 onclick=" displayComents('pilatesCom1')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('pilatesCom1')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('pilatesCom1')">
                 Oceni
             </button>
         </div>
@@ -119,13 +119,13 @@ var stott = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick=" displayComents('pilatesCom2')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('pilatesCom2')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('pilatesCom2')">
                 Oceni
             </button>
         </div>
@@ -187,24 +187,24 @@ var reformer = {
     </p>
 
     <div class="row">
-        <div class="col-sm-12 col-md-4 description">
+        <div class="col-sm-12 col-md-3 description">
             <p class="description text-center">
                 Težina: &nbsp;3.5
             </p>
         </div>
-        <div class="col-sm-12 col-md-4 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+        <div class="col-sm-12 col-md-6 text-center">
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick="displayComents('pilatesCom3')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('pilatesCom3')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('pilatesCom3')">
                 Oceni
             </button>
         </div>
 
-        <div class="description col-sm-12 col-md-4 text-center">
+        <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
                 Ocena: &nbsp;&nbsp;
                 <span id=pilatesCom3Mark> 5</span>
@@ -265,13 +265,13 @@ var cxworx = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark btn-pos"
+            <button type="button" class="btn bg-dark btn-pos2"
                 onclick=" displayComents('coreCom1')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom1')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('coreCom1')">
                 Oceni
             </button>
         </div>
@@ -338,13 +338,13 @@ var bodyweight = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick=" displayComents('coreCom2')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom2')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('coreCom2')">
                 Oceni
             </button>
         </div>
@@ -409,13 +409,13 @@ var plank = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick="displayComents('coreCom3')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('coreCom3')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('coreCom3')">
                 Oceni
             </button>
         </div>
@@ -479,24 +479,24 @@ var prenatal = {
     </p>
 
     <div class="row">
-        <div class="col-sm-12 col-md-4 description">
+        <div class="col-sm-12 col-md-3 description">
             <p class="description text-center">
                 Težina: &nbsp;5
             </p>
         </div>
-        <div class="col-sm-12 col-md-4 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+        <div class="col-sm-12 col-md-6 text-center">
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick="displayComents('yogaCom3')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom3')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('yogaCom3')">
                 Oceni
             </button>
         </div>
 
-        <div class="description col-sm-12 col-md-4 text-center">
+        <div class="description col-sm-12 col-md-3 text-center">
             <p class="description text-center">
                 Ocena: &nbsp;&nbsp;
                 <span id=yogaCom3Mark> 5</span>
@@ -562,13 +562,13 @@ var yin = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick=" displayComents('yogaCom2')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom2')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('yogaCom2')">
                 Oceni
             </button>
         </div>
@@ -635,13 +635,13 @@ var bikram = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark btn-pos"
+            <button type="button" class="btn bg-dark btn-pos2"
                 onclick=" displayComents('yogaCom1')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('yogaCom1')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('yogaCom1')">
                 Oceni
             </button>
         </div>
@@ -712,13 +712,13 @@ var bodyCombat = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark btn-pos"
+            <button type="button" class="btn bg-dark btn-pos2"
                 onclick=" displayComents('cardioCom1')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom1')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('cardioCom1')">
                 Oceni
             </button>
         </div>
@@ -790,13 +790,13 @@ var rpm = {
             </p>
         </div>
         <div class="col-sm-12 col-md-6 text-center">
-            <button type="button" class="btn bg-dark float-left btn-pos"
+            <button type="button" class="btn bg-dark float-left btn-pos2"
                 onclick=" displayComents('cardioCom2')">
                 Komentari
             </button>
             &nbsp;
             &nbsp;
-            <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom2')">
+            <button type="button" class="btn bg-dark btn-pos2" onclick="mark('cardioCom2')">
                 Oceni
             </button>
         </div>
@@ -859,24 +859,24 @@ var bodyStep = {
 </p>
 
 <div class="row">
-    <div class="col-sm-12 col-md-4 description">
+    <div class="col-sm-12 col-md-3 description">
         <p class="description text-center">
             Težina: &nbsp;3.5
         </p>
     </div>
-    <div class="col-sm-12 col-md-4 text-center">
-        <button type="button" class="btn bg-dark float-left btn-pos"
+    <div class="col-sm-12 col-md-6 text-center">
+        <button type="button" class="btn bg-dark float-left btn-pos2"
             onclick="displayComents('cardioCom3')">
             Komentari
         </button>
         &nbsp;
         &nbsp;
-        <button type="button" class="btn bg-dark btn-pos" onclick="mark('cardioCom3')">
+        <button type="button" class="btn bg-dark btn-pos2" onclick="mark('cardioCom3')">
             Oceni
         </button>
     </div>
 
-    <div class="description col-sm-12 col-md-4 text-center">
+    <div class="description col-sm-12 col-md-3 text-center">
         <p class="description text-center">
             Ocena: &nbsp;&nbsp;
             <span id=cardioCom3Mark> 5</span>

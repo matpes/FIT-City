@@ -208,7 +208,6 @@ footer{
 
 
 .btn-pos{
-    width: 45%;
     text-align: center;
     color: lightgray;
 }
@@ -216,6 +215,19 @@ footer{
     left: calc(33%+15);
     color: blanchedalmond;
 }
+
+
+.btn-pos2{
+    width: 45%;
+    text-align: center;
+    color: lightgray;
+}
+.btn-pos2:hover{
+    left: calc(33%+15);
+    color: blanchedalmond;
+}
+
+
 
 .filter{
     width: calc(100% - 30px);
